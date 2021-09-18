@@ -13,14 +13,13 @@ dropdown-toggle::after {
 }
 
 .banner {
-	/* background: url('/images/banner_image.png') center; */
 	background: lightblue url('/images/banner_image.png') repeat-x scroll center;
 	background-size: cover;
 	height: 480px;
 }
 
 .banner-card-position {
-	width: 24rem;
+	width: 25rem;
 	top: 12rem;
 	right: 0;
 }
