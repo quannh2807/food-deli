@@ -45,3 +45,30 @@ dropdown-toggle::after {
     height: 360px;
     border-radius: 0.5rem;
 }
+
+/* Start Popular Section */
+.pro_category {
+	background: #F6F6FA;
+	padding: 8px 16px;
+	color: #646D84;
+	cursor: pointer;
+}
+.pro_category:hover {
+	background: #CDEEDF;
+	color: #05A85E;
+}
+.pro_category_active {
+	background: #CDEEDF;
+	color: #05A85E;
+}
+/* End Popular Section */
+
+/* List Product Section */
+.btn-get-all {
+	background-color: rgba(205, 238, 223, 1);
+}
+
+.btn-get-all:hover {
+	background-color: rgb(171, 235, 206);
+}
+/* End Product Section */
