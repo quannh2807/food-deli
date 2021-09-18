@@ -1,188 +1,401 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/png" href="./images/logo-round.png" />
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+			crossorigin="anonymous"
+		/>
 
-    <link rel="icon" type="image/png" href="/images/logo-round.png" />
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+		<title>Food</title>
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
 
-    <title>Food</title>
-    <link rel="stylesheet" href="/css/main.css">
-</head>
+	<body>
+		<!-- Start Navbar -->
+		<nav class="border-top border-success border-4">
+			<div class="container px-0" style="border-bottom-color: #ecedf1">
+				<div class="d-flex align-items-center justify-content-between">
+					<div class="d-flex align-items-center">
+						<a href="#" class="nav-link p-0"
+							><img src="./icons/back.svg" alt="" /> &nbsp;<span
+								>Quay lại trang chủ food.com.vn</span
+							>
+						</a>
+					</div>
 
-<body>
-    <!-- Start Navbar -->
-    <nav class="border-top border-success border-4">
-        <div class="container px-0" style="border-bottom-color: #ECEDF1;">
-            <div class="d-flex align-items-center justify-content-between">
-                <div class="d-flex align-items-center">
-                    <a href="#" class="nav-link p-0"><img src="/icons/back.svg" alt="">
-                        &nbsp;<span>Quay lại trang chủ food.com.vn</span>
-                    </a>
-                </div>
+					<ul class="navbar-nav flex-row">
+						<li class="nav-item me-3">
+							<a class="nav-link d-flex align-items-center" href="#">
+								<img src="./icons/doc.svg" alt="" />&nbsp;&nbsp;Giới thiệu
+							</a>
+						</li>
+						<li class="nav-item me-3">
+							<a class="nav-link d-flex align-items-center" href="#">
+								<img src="./icons/store.svg" alt="" />&nbsp;&nbsp;Food Deli Store</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link d-flex align-items-center" href="#">
+								<img src="./icons/bag.svg" alt="" />&nbsp;&nbsp;Bán hàng cùng Food
+								Deli</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="container px-0 border-top border-1">
+				<div class="row py-3">
+					<!-- Brand image -->
+					<div class="col-1">
+						<a class="navbar-brand" href="#">
+							<img src="./images/food-deli-logo.png" alt="Food deli logo" />
+						</a>
+					</div>
 
-                <ul class="navbar-nav flex-row">
-                    <li class="nav-item me-3">
-                        <a class="nav-link d-flex align-items-center" href="#">
-                            <img src="/icons/doc.svg" alt="">&nbsp;&nbsp;Giới thiệu
-                        </a>
-                    </li>
-                    <li class="nav-item me-3">
-                        <a class="nav-link d-flex align-items-center" href="#">
-                            <img src="/icons/store.svg" alt="">&nbsp;&nbsp;Food Deli
-                            Store</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link d-flex align-items-center" href="#">
-                            <img src="/icons/bag.svg" alt="">&nbsp;&nbsp;Bán hàng
-                            cùng Food Deli</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="container px-0 border-top border-1">
-            <div class="row py-3">
-                <!-- Brand image -->
-                <div class="col-1">
-                    <a class="navbar-brand" href="#">
-                        <img src="./images/food-deli-logo.png" alt="Food deli logo">
-                    </a>
-                </div>
+					<!-- Form search -->
+					<form class="col-8 my-auto">
+						<div class="d-flex justify-content-center align-items-center">
+							<div class="btn-group me-2">
+								<button
+									type="button"
+									class="btn btn-sm btn-success rounded-pill dropdown-toggle px-3"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									<img src="./icons/bag2.svg" alt="" />&nbsp; Sản phẩm
+								</button>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Sản phẩm 2</a></li>
+									<li><a class="dropdown-item" href="#">Sản phẩm 3</a></li>
+									<li><a class="dropdown-item" href="#">Sản phẩm 4</a></li>
+								</ul>
+							</div>
 
-                <!-- Form search -->
-                <form class="col-8 my-auto">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div class="btn-group me-2">
-                            <button type="button" class="btn btn-sm btn-success rounded-pill dropdown-toggle px-3"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="/icons/bag2.svg" alt="">&nbsp;
-                                Sản phẩm
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Sản phẩm 2</a></li>
-                                <li><a class="dropdown-item" href="#">Sản phẩm 3</a></li>
-                                <li><a class="dropdown-item" href="#">Sản phẩm 4</a></li>
-                            </ul>
-                        </div>
+							<div class="col-8" style="position: relative">
+								<input
+									class="form-control rounded-pill py-1 px-3"
+									type="search"
+									placeholder="Tìm kiếm sản phẩm"
+									aria-label="Search"
+									style="background-color: #e6e6e6"
+								/>
+								<!--   <img src="./icons/search.svg" alt="" style="position: absolute;top:5px;right: 15px;"> -->
+							</div>
+						</div>
+					</form>
 
-                        <div class="col-8" style="position: relative;">
-                            <input class="form-control rounded-pill py-1 px-3" type="search"
-                                placeholder="Tìm kiếm sản phẩm" aria-label="Search" style="background-color: #e6e6e6;">
-                            <!--   <img src="/icons/search.svg" alt="" style="position: absolute;top:5px;right: 15px;"> -->
-                        </div>
-                    </div>
-                </form>
+					<!-- Cart section -->
+					<ul class="col-3 navbar-nav flex-row justify-content-end align-items-center">
+						<li class="nav-item me-3">
+							<a
+								class="btn btn-sm border rounded-5 position-relative"
+								aria-current="page"
+								href="#"
+							>
+								<img src="./icons/heart.svg" alt="" />
+								<span
+									class="
+										position-absolute
+										top-0
+										start-100
+										translate-middle
+										badge
+										rounded-pill
+										bg-danger
+									"
+									style="font-size: 11px"
+								>
+									99
+								</span>
+							</a>
+						</li>
+						<li class="nav-item me-3">
+							<a
+								class="btn btn-sm border rounded-5 position-relative"
+								aria-current="page"
+								href="#"
+							>
+								<img src="./icons/cart.svg" alt="" />
+								<span
+									class="
+										position-absolute
+										top-0
+										start-100
+										translate-middle
+										badge
+										rounded-pill
+										bg-danger
+									"
+									style="font-size: 11px"
+								>
+									99
+								</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a
+								class="
+									btn btn-sm
+									border border-success
+									rounded-pill
+									px-3
+									text-success
+								"
+								href="#"
+								>Đăng nhập</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- End Navbar -->
 
-                <!-- Cart section -->
-                <ul class="col-3 navbar-nav flex-row justify-content-end align-items-center">
-                    <li class="nav-item me-3">
-                        <a class="btn btn-sm border rounded-5 position-relative" aria-current="page" href="#">
-                            <img src="./icons/heart.svg" alt="">
-                            <span
-                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-                                style="font-size: 11px;">
-                                99
-                            </span>
-                        </a>
-                    </li>
-                    <li class="nav-item me-3">
-                        <a class="btn btn-sm border rounded-5 position-relative" aria-current="page" href="#">
-                            <img src="./icons/cart.svg" alt="">
-                            <span
-                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-                                style="font-size: 11px;">
-                                99
-                            </span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-sm border border-success rounded-pill px-3 text-success" href="#">Đăng
-                            nhập</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- End Navbar -->
+		<!-- Start Banner -->
+		<section class="banner-section" style="margin-bottom: 4rem">
+			<div class="container position-relative">
+				<div class="card rounded-3 position-absolute banner-card-position">
+					<div class="card-body pt-3">
+						<div class="text-end">
+							<p class="mb-0 banner-card-brand-sub-name">
+								Gợi ý các món mới hàng ngày từ các đầu bếp của
+							</p>
+							<p class="mb-0 banner-card-brand-name">Food Deli</p>
+						</div>
+						<form class="py-4">
+							<div class="form-group mb-2">
+								<input
+									type="text"
+									class="form-control"
+									placeholder="Email của bạn"
+								/>
+							</div>
+							<div class="form-group">
+								<button class="btn btn-success w-100" type="submit">
+									Đăng ký nhận tin
+								</button>
+							</div>
+						</form>
 
-    <!-- Start Banner -->
-    <section class="banner" style="margin-bottom: 4rem;">
-        <div class="container position-relative">
-            <div class="card rounded-3 position-absolute banner-card-position">
-                <div class="card-body pt-3">
-                    <div class="text-end">
-                        <p class="mb-0 banner-card-brand-sub-name">Gợi ý các món mới hàng ngày từ các đầu bếp của</p>
-                        <p class="mb-0 banner-card-brand-name">Food Deli</p>
-                    </div>
-                    <form class="py-4">
-                        <div class="form-group mb-2">
-                            <input type="text" class="form-control" placeholder="Email của bạn" />
-                        </div>
-                        <div class="form-group">
-                            <button class="btn btn-success w-100" type="submit">
-                                Đăng ký nhận tin
-                            </button>
-                        </div>
-                    </form>
+						<div class="text-center">
+							<p class="card-subtitle text-muted" style="font-size: 13px">
+								Đăng ký tài khoản ngay để khám phá hàng nghìn thực đơn!
+							</p>
+							<a href="#" class="btn text-decoration-underline pb-0">Đăng ký</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Banner -->
 
-                    <div class="text-center">
-                        <p class="card-subtitle text-muted" style="font-size: 13px;">Đăng ký tài khoản ngay để khám phá
-                            hàng nghìn thực đơn!</p>
-                        <a href="#" class="btn text-decoration-underline pb-0">Đăng ký</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Banner -->
+		<!-- Start introduction section -->
+		<section>
+			<div class="container pt-5 pb-3">
+				<h4 class="text-center fw-bold">Tiết kiệm thời gian mỗi ngày!</h4>
 
-    <!-- Start introduction section -->
-    <section>
-        <div class="container pt-5 pb-3">
-            <h4 class="text-center fw-bold">Tiết kiệm thời gian mỗi ngày!</h4>
+				<div class="row">
+					<div class="col-md-4 col-sm-12 text-center">
+						<div class="my-4">
+							<img src="./icons/grocery_1.svg" alt="" />
+						</div>
 
-            <div class="row">
-                <div class="col-md-4 col-sm-12 text-center">
-                    <div class="my-4">
-                        <img src="/icons/grocery_1.svg" alt="">
-                    </div>
+						<p class="fs-5 fw-bold si">Lựa chọn sản phẩm</p>
+						<p style="color: #646d84; max-width: 85%" class="mx-auto fw-bold">
+							Chọn từ nhiều loại thức ăn chế biến sẵn hoặc nguyên liệu đã sơ chế được
+							hút chân không. Thực đơn mới có sẵn hàng tuần
+						</p>
+					</div>
+					<div class="col-md-4 col-sm-12 text-center">
+						<div class="my-4">
+							<img src="./icons/delivery_box_1.svg" alt="" />
+						</div>
 
-                    <p class="fs-5 fw-bold si">Lựa chọn sản phẩm</p>
-                    <p style="color: #646D84; max-width: 85%;" class="mx-auto fw-bold">Chọn từ nhiều loại thức ăn chế biến sẵn hoặc nguyên liệu
-                        đã sơ
-                        chế được hút chân không. Thực đơn
-                        mới có sẵn hàng tuần</p>
-                </div>
-                <div class="col-md-4 col-sm-12 text-center">
-                    <div class="my-4">
-                        <img src="/icons/delivery_box_1.svg" alt="">
-                    </div>
+						<p class="fs-5 fw-bold si">Nhập địa chỉ giao hàng</p>
+						<p style="color: #646d84; max-width: 85%" class="mx-auto fw-bold">
+							Food Deli giao hàng nhanh chóng tại nhà hoặc văn phòng của bạn. Chúng
+							tôi giao hàng mọi nơi tại Hà Nội và TP. Hồ Chí Minh
+						</p>
+					</div>
+					<div class="col-md-4 col-sm-12 text-center">
+						<div class="my-4">
+							<img src="./icons/microwave_1.svg" alt="" />
+						</div>
 
-                    <p class="fs-5 fw-bold si">Nhập địa chỉ giao hàng</p>
-                    <p style="color: #646D84; max-width: 85%;" class="mx-auto fw-bold">Food Deli giao hàng nhanh chóng tại nhà hoặc văn phòng của bạn. Chúng tôi giao hàng mọi nơi tại Hà Nội và TP. Hồ Chí Minh</p>
-                </div>
-                <div class="col-md-4 col-sm-12 text-center">
-                    <div class="my-4">
-                        <img src="/icons/microwave_1.svg" alt="">
-                    </div>
+						<p class="fs-5 fw-bold si">Nhận nguyên liệu sơ chế</p>
+						<p style="color: #646d84; max-width: 85%" class="mx-auto fw-bold">
+							Nguyên liệu sơ chế đã được hút chân không và sơ chế sẵn, các bạn chỉ cần
+							nấu theo công thức có sẵn của Food Deli
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End introduction section -->
 
-                    <p class="fs-5 fw-bold si">Nhận nguyên liệu sơ chế</p>
-                    <p style="color: #646D84; max-width: 85%;" class="mx-auto fw-bold">Nguyên liệu sơ chế đã được hút chân không và sơ chế sẵn, các bạn chỉ cần nấu theo công thức có sẵn của Food Deli</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End introduction section -->
+		<!-- Start menu section -->
+		<section class="menu-section">
+			<div class="container py-4">
+				<!-- Row 1  -->
+				<div class="row gx-4">
+					<div class="col-md-7">
+						<div
+							class="menu-section-row-1-col-1 p-3 d-flex align-items-end"
+							style="background-image: url('./images/combo_7_ngay.png')"
+						>
+							<div>
+								<h5 class="text-light fw-bold" style="font-size: 1.5rem">
+									350.000đ/tuần
+								</h5>
+								<p class="text-light fs-6 mb-0">Combo ăn tối 7 ngày</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<div
+							class="
+								menu-section-row-1-col-2
+								p-3
+								d-flex
+								flex-column
+								justify-content-lg-between
+							"
+							style="background: #fff url('./images/ga_chay_bo.png') no-repeat center"
+						>
+							<div>
+								<p class="fs-6 mb-0">Món gà</p>
+								<h4 class="text-capitalize fw-bold fs-4">Gà chạy bộ</h4>
+							</div>
+							<div class="d-flex flex-row justify-content-between align-items-center">
+								<div>
+									<h5 class="fw-bold" style="font-size: 1.5rem">
+										350.000đ/tuần
+									</h5>
+									<p class="fs-6 mb-0">Food Deli Pack</p>
+								</div>
+								<!-- icon add -->
+								<div class="" style="width: 3rem;">
+									<a href="#"><img src="./icons/add_circle.svg" alt=""></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-        crossorigin="anonymous"></script>
-</body>
+				<!-- Row 2 -->
+				<div class="row pt-4 gx-4">
+					<div class="col-md-6">
+						<div class="row gx-4">
+							<div class="col-6">
+								<div
+									class="
+										menu-section-row-1-col-2
+										p-3
+										d-flex
+										flex-column
+										justify-content-lg-between
+									"
+									style="
+										background: #fff url('./images/ca_kho_to.png') no-repeat
+											center;
+									"
+								>
+									<div>
+										<p class="fs-6 mb-0">Món cá</p>
+										<h4 class="text-capitalize fw-bold fs-4">Cá kho tộ</h4>
+									</div>
+									<div class="d-flex flex-row justify-content-between align-items-center">
+										<div>
+											<h5 class="fw-bold" style="font-size: 1.5rem">
+												350.000đ/tuần
+											</h5>
+											<p class="fs-6 mb-0">Food Deli Pack</p>
+										</div>
+										<!-- icon add -->
+										<div class="" style="width: 3rem;">
+											<a href="#"><img src="./icons/add_circle.svg" alt=""></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-6">
+								<div
+									class="
+										menu-section-row-1-col-2
+										p-3
+										d-flex
+										flex-column
+										justify-content-lg-between
+									"
+									style="
+										background: #fff url('./images/lau_bo_thap_cam.png')
+											no-repeat center;
+									"
+								>
+									<div>
+										<p class="fs-6 mb-0">MÓN BÒ</p>
+										<h4 class="text-capitalize fw-bold fs-4">
+											Lẩu bò thập cẩm
+										</h4>
+									</div>
+									<div class="d-flex flex-row justify-content-between align-items-center">
+										<div>
+											<h5 class="fw-bold" style="font-size: 1.5rem">
+												350.000đ/tuần
+											</h5>
+											<p class="fs-6 mb-0">Food Deli Pack</p>
+										</div>
+										<!-- icon add -->
+										<div class="" style="width: 3rem;">
+											<a href="#"><img src="./icons/add_circle.svg" alt=""></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div
+							class="
+								menu-section-row-1-col-2
+								p-3
+								d-flex
+								flex-column
+								justify-content-lg-between
+							"
+							style="
+								background: url('./images/stay_home_kit.png') no-repeat,
+									linear-gradient(#000000, #00000000);
+								background-size: cover;
+							"
+						>
+							<div>
+								<p class="fs-6 mb-0 text-light">MEALS</p>
+								<h4 class="text-capitalize fw-bold fs-4 text-light">
+									#stayhome kit: Gợi ý 6 thực đơn hàng ngày tiết kiệm đổi vị cho
+									gia đình mùa dịch
+								</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End menu section -->
 
+		<!-- Bootstrap Bundle with Popper -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>

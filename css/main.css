@@ -12,23 +12,36 @@ dropdown-toggle::after {
 	color: rgb(8, 8, 8);
 }
 
-.banner {
-	background: lightblue url('/images/banner_image.png') repeat-x scroll center;
+.banner-section {
+	background: lightblue url('../images/banner_image.png') repeat-x scroll center;
 	background-size: cover;
 	height: 480px;
 }
-
 .banner-card-position {
 	width: 25rem;
 	top: 12rem;
 	right: 0;
 }
 .banner-card-brand-name {
-    color: #05A85E;
-    font-size: 2.5rem;
-    font-weight: 700;
+	color: #05a85e;
+	font-size: 2.5rem;
+	font-weight: 700;
 }
 .banner-card-brand-sub-name {
-    font-weight: 600;
-    font-size: 1.5rem;
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+
+.menu-section {
+	background: linear-gradient(#05a85e, #b9eed6);
+}
+.menu-section-row-1-col-1 {
+    height: 360px;
+    background: #666 no-repeat;
+    background-size: cover;
+    border-radius: 0.5rem;
+}
+.menu-section-row-1-col-2 {
+    height: 360px;
+    border-radius: 0.5rem;
 }
