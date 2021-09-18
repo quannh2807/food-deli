@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+dropdown-toggle::after {
+	background-image: url('./icons/down.svg');
+}
+
+.nav-link {
+	color: rgb(8, 8, 8);
+}
+
+.banner {
+	/* background: url('/images/banner_image.png') center; */
+	background: lightblue url('/images/banner_image.png') repeat-x scroll center;
+	background-size: cover;
+	height: 480px;
+}
+
+.banner-card-position {
+	width: 24rem;
+	top: 12rem;
+	right: 0;
+}
+.banner-card-brand-name {
+    color: #05A85E;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.banner-card-brand-sub-name {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
