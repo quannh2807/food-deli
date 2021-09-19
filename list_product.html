@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="icon" type="image/png" href="./images/logo-round.png" />
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+			crossorigin="anonymous"
+		/>
+
+		<title>Danh sách sản phẩm</title>
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+
+	<body>
+		<!-- Start Navbar -->
+		<nav class="border-top border-success border-4">
+			<div class="container px-0" style="border-bottom-color: #ecedf1">
+				<div class="d-flex align-items-center justify-content-between">
+					<div class="d-flex align-items-center">
+						<a href="#" class="nav-link p-0"
+							><img src="./icons/back.svg" alt="" /> &nbsp;<span
+								>Quay lại trang chủ food.com.vn</span
+							>
+						</a>
+					</div>
+
+					<ul class="navbar-nav flex-row">
+						<li class="nav-item me-3">
+							<a class="nav-link d-flex align-items-center" href="#">
+								<img src="./icons/doc.svg" alt="" />&nbsp;&nbsp;Giới thiệu
+							</a>
+						</li>
+						<li class="nav-item me-3">
+							<a class="nav-link d-flex align-items-center" href="#">
+								<img src="./icons/store.svg" alt="" />&nbsp;&nbsp;Food Deli Store</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link d-flex align-items-center" href="#">
+								<img src="./icons/bag.svg" alt="" />&nbsp;&nbsp;Bán hàng cùng Food
+								Deli</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="container px-0 border-top border-1">
+				<div class="row py-3">
+					<!-- Brand image -->
+					<div class="col-1">
+						<a class="navbar-brand" href="#">
+							<img src="./images/food-deli-logo.png" alt="Food deli logo" />
+						</a>
+					</div>
+
+					<!-- Form search -->
+					<form class="col-8 my-auto">
+						<div class="d-flex justify-content-center align-items-center">
+							<div class="btn-group me-2">
+								<button
+									type="button"
+									class="btn btn-sm btn-success rounded-pill dropdown-toggle px-3"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									<img src="./icons/bag2.svg" alt="" />&nbsp; Sản phẩm
+								</button>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Sản phẩm 2</a></li>
+									<li><a class="dropdown-item" href="#">Sản phẩm 3</a></li>
+									<li><a class="dropdown-item" href="#">Sản phẩm 4</a></li>
+								</ul>
+							</div>
+
+							<div class="col-8" style="position: relative">
+								<input
+									class="form-control rounded-pill py-1 px-3"
+									type="search"
+									placeholder="Tìm kiếm sản phẩm"
+									aria-label="Search"
+									style="background-color: #e6e6e6"
+								/>
+								<!--   <img src="./icons/search.svg" alt="" style="position: absolute;top:5px;right: 15px;"> -->
+							</div>
+						</div>
+					</form>
+
+					<!-- Cart section -->
+					<ul class="col-3 navbar-nav flex-row justify-content-end align-items-center">
+						<li class="nav-item me-3">
+							<a
+								class="btn btn-sm border rounded-5 position-relative"
+								aria-current="page"
+								href="#"
+							>
+								<img src="./icons/heart.svg" alt="" />
+								<span
+									class="
+										position-absolute
+										top-0
+										start-100
+										translate-middle
+										badge
+										rounded-pill
+										bg-danger
+									"
+									style="font-size: 11px"
+								>
+									99
+								</span>
+							</a>
+						</li>
+						<li class="nav-item me-3">
+							<a
+								class="btn btn-sm border rounded-5 position-relative"
+								aria-current="page"
+								href="#"
+							>
+								<img src="./icons/cart.svg" alt="" />
+								<span
+									class="
+										position-absolute
+										top-0
+										start-100
+										translate-middle
+										badge
+										rounded-pill
+										bg-danger
+									"
+									style="font-size: 11px"
+								>
+									99
+								</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a
+								class="
+									btn btn-sm
+									border border-success
+									rounded-pill
+									px-3
+									text-success
+								"
+								href="#"
+								>Đăng nhập</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- End Navbar -->
+
+		<!-- Start Carousel -->
+		<section class="mb-5">
+			<div class="container pt-4">
+				<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-indicators mb-0">
+						<a
+							href="javascript:void(0)"
+							type="button"
+							data-bs-target="#carouselExampleCaptions"
+							data-bs-slide-to="0"
+							aria-current="true"
+							aria-label="Slide 1"
+						></a>
+						<a
+							href="javascript:void(0)"
+							type="button"
+							data-bs-target="#carouselExampleCaptions"
+							data-bs-slide-to="1"
+							aria-label="Slide 2"
+						></a>
+						<a
+							href="javascript:void(0)"
+							type="button"
+							data-bs-target="#carouselExampleCaptions"
+							data-bs-slide-to="2"
+							aria-label="Slide 3"
+							class="active"
+						></a>
+						<a
+							href="javascript:void(0)"
+							type="button"
+							data-bs-target="#carouselExampleCaptions"
+							data-bs-slide-to="3"
+							aria-label="Slide 4"
+						></a>
+						<a
+							href="javascript:void(0)"
+							type="button"
+							data-bs-target="#carouselExampleCaptions"
+							data-bs-slide-to="4"
+							aria-label="Slide 3"
+						></a>
+					</div>
+
+					<div class="carousel-inner">
+						<div
+							class="carousel-item p-4 carousel_item"
+							style="
+								background: linear-gradient(
+										to bottom,
+										transparent,
+										rgba(0, 0, 0, 0.2)
+									),
+									url('./images/carousel_1.png');
+								background-size: cover;
+							"
+						>
+							<div class="h-100 d-flex flex-column justify-content-end">
+								<h6 class="text-dark fw-bold fs-5">TỰ LÀM MÓN</h6>
+								<h6
+									class="text-white fw-bold fs-1"
+									style="text-shadow: 0px 0px 16px #ffd200"
+								>
+									CHUẨN 5 SAO
+								</h6>
+								<h6 class="text-dark fw-bold fs-5">NHƯ NHÀ HÀNG</h6>
+							</div>
+						</div>
+						<div
+							class="carousel-item p-4 carousel_item"
+							style="
+								background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.5)),
+									url('./images/carousel_2.png');
+								background-size: cover;
+							"
+						>
+							<div class="h-100 d-flex flex-column justify-content-end">
+								<h6 class="text-white fw-bold fs-5">TỰ LÀM MÓN</h6>
+								<h6
+									class="text-white fw-bold fs-1"
+									style="text-shadow: 0px 0px 16px #ffd200"
+								>
+									CHUẨN 5 SAO
+								</h6>
+								<h6 class="text-white fw-bold fs-5">NHƯ NHÀ HÀNG</h6>
+							</div>
+						</div>
+						<div
+							class="carousel-item p-4 carousel_item active"
+							style="
+								background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.5)),
+									url('./images/carousel_3.png');
+								background-size: cover;
+							"
+						>
+							<div class="h-100 d-flex flex-column justify-content-end">
+								<h6 class="text-white fw-bold fs-5">TỰ LÀM MÓN</h6>
+								<h6
+									class="text-white fw-bold fs-1"
+									style="text-shadow: 0px 0px 16px #ffd200"
+								>
+									CHUẨN 5 SAO
+								</h6>
+								<h6 class="text-white fw-bold fs-5">NHƯ NHÀ HÀNG</h6>
+							</div>
+						</div>
+
+						<div
+							class="carousel-item p-4 carousel_item"
+							style="
+								background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.5)),
+									url('./images/carousel_2.png');
+								background-size: cover;
+							"
+						>
+							<div class="h-100 d-flex flex-column justify-content-end">
+								<h6 class="text-white fw-bold fs-5">TỰ LÀM MÓN</h6>
+								<h6
+									class="text-white fw-bold fs-1"
+									style="text-shadow: 0px 0px 16px #ffd200"
+								>
+									CHUẨN 5 SAO
+								</h6>
+								<h6 class="text-white fw-bold fs-5">NHƯ NHÀ HÀNG</h6>
+							</div>
+						</div>
+						<div
+							class="carousel-item p-4 carousel_item"
+							style="
+								background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.5)),
+									url('./images/carousel_1.png');
+								background-size: cover;
+							"
+						>
+							<div class="h-100 d-flex flex-column justify-content-end">
+								<h6 class="text-white fw-bold fs-5">TỰ LÀM MÓN</h6>
+								<h6
+									class="text-white fw-bold fs-1"
+									style="text-shadow: 0px 0px 16px #ffd200"
+								>
+									CHUẨN 5 SAO
+								</h6>
+								<h6 class="text-white fw-bold fs-5">NHƯ NHÀ HÀNG</h6>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Carousel -->
+
+		<!-- Start  -->
+
+		<!-- Start Footer section -->
+		<section class="pt-5">
+			<div class="container mt-4">
+				<!-- Row 1: Contacts -->
+				<div class="row justify-content-between align-items-center my-3">
+					<div class="col-md-10">
+						<div class="row gx-5 align-items-center">
+							<div class="col-md-3 d-flex align-items-start">
+								<div class="me-2"><img src="./icons/phone.svg" alt="" /></div>
+								<div class="">
+									<p class="m-0 text-secondary" style="font-size: 0.75rem">
+										Hotline 24/7
+									</p>
+									<p class="m-0 fs-6">0976.212.555</p>
+								</div>
+							</div>
+
+							<div class="col-md-3 d-flex align-items-start">
+								<div class="me-2"><img src="./icons/help.svg" alt="" /></div>
+								<div class="">
+									<p class="m-0 text-secondary" style="font-size: 0.75rem">
+										Hỗ trợ khách hàng
+									</p>
+									<p class="m-0 fs-6">deli@food.com.vn</p>
+								</div>
+							</div>
+
+							<div class="col-md-3 d-flex align-items-start">
+								<div class="me-2"><img src="./icons/mail.svg" alt="" /></div>
+								<div class="">
+									<p class="m-0 text-secondary" style="font-size: 0.75rem">
+										Chăm sóc khách hàng
+									</p>
+									<p class="m-0 fs-6">cskh@food.com.vn</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Payment section -->
+					<div class="col-md-2">
+						<div class="d-flex justify-content-between align-items-center">
+							<a
+								href="javascript:void(0)"
+								class="
+									btn btn-sm
+									border
+									rounded-3
+									p-1
+									d-flex
+									justify-content-center
+									align-items-center
+								"
+								style="width: 34px; height: 24px"
+							>
+								<img src="./icons/Mastercard.svg" class="d-inline-block" alt="" />
+							</a>
+							<a
+								href="javascript:void(0)"
+								class="
+									btn btn-sm
+									border
+									rounded-3
+									p-1
+									d-flex
+									justify-content-center
+									align-items-center
+								"
+								style="width: 34px; height: 24px"
+							>
+								<img src="./icons/PayPal.svg" class="d-inline-block" alt="" />
+							</a>
+							<a
+								href="javascript:void(0)"
+								class="
+									btn btn-sm
+									border
+									rounded-3
+									p-1
+									d-flex
+									justify-content-center
+									align-items-center
+								"
+								style="width: 34px; height: 24px"
+							>
+								<img src="./icons/Bitcoin.svg" class="d-inline-block" alt="" />
+							</a>
+							<a
+								href="javascript:void(0)"
+								class="
+									btn btn-sm
+									border
+									rounded-3
+									p-1
+									d-flex
+									justify-content-center
+									align-items-center
+								"
+								style="width: 34px; height: 24px"
+							>
+								<img src="./icons/visa-logo.svg" class="d-inline-block" alt="" />
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Row 2: Navigatiors -->
+				<div class="row border-top py-3">
+					<div class="col-md-4">
+						<div>
+							<img src="./images/logo-round.png" alt="" />
+						</div>
+
+						<div class="d-flex align-items-center mt-3">
+							<a href="#" class="btn btn-sm">
+								<img src="./icons/app_store.svg" alt="" />
+							</a>
+							<a href="#" class="btn btn-sm">
+								<img src="./icons/google_play.svg" alt="" />
+							</a>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<div class="row gx-2">
+							<div class="col-md-3">
+								<p class="fw-bold fs-6 mb-1">Về chúng tôi</p>
+								<ul class="nav flex-column">
+									<li class="nav-item">
+										<a
+											class="nav-link ps-0"
+											href="#"
+											style="
+												color: rgba(100, 109, 132, 1);
+												font-size: 0.8rem;
+												font-weight: 600;
+											"
+											>Giới thiệu</a
+										>
+									</li>
+									<li class="nav-item">
+										<a
+											class="nav-link ps-0"
+											href="#"
+											style="
+												color: rgba(100, 109, 132, 1);
+												font-size: 0.8rem;
+												font-weight: 600;
+											"
+											>Liên hệ</a
+										>
+									</li>
+									<li class="nav-item">
+										<a
+											class="nav-link ps-0"
+											href="#"
+											style="
+												color: rgba(100, 109, 132, 1);
+												font-size: 0.8rem;
+												font-weight: 600;
+											"
+											>Góp ý</a
+										>
+									</li>
+									<li class="nav-item">
+										<a
+											class="nav-link ps-0"
+											href="#"
+											style="
+												color: rgba(100, 109, 132, 1);
+												font-size: 0.8rem;
+												font-weight: 600;
+											"
+											>Tuyển dụng</a
+										>
+									</li>
+								</ul>
+							</div>
+
+							<div class="col-md-3">
+								<p class="fw-bold fs-6 mb-1">Hướng dẫn</p>
+								<ul class="nav flex-column">
+									<li class="nav-item">
+										<a
+											class="nav-link ps-0"
+											href="#"
+											style="
+												color: rgba(100, 109, 132, 1);
+												font-size: 0.8rem;
+												font-weight: 600;
+											"
+											>Khuyến mại</a
+										>
+									</li>
+									<li class="nav-item">
+										<a
+											class="nav-link ps-0"
+											href="#"
+											style="
+												color: rgba(100, 109, 132, 1);
+												font-size: 0.8rem;
+												font-weight: 600;
+											"
+											>Hướng dẫn đặt hàng</a
+										>
+									</li>
+									<li class="nav-item">
+										<a
+											class="nav-link ps-0"
+											href="#"
+											style="
+												color: rgba(100, 109, 132, 1);
+												font-size: 0.8rem;
+												font-weight: 600;
+											"
+											>Hướng dẫn đổi trả hàng</a
+										>
+									</li>
+									<li class="nav-item">
+										<a
+											class="nav-link ps-0"
+											href="#"
+											style="
+												color: rgba(100, 109, 132, 1);
+												font-size: 0.8rem;
+												font-weight: 600;
+											"
+											>Khách hàng thân thiết</a
+										>
+									</li>
+									<li class="nav-item">
+										<a
+											class="nav-link ps-0"
+											href="#"
+											style="
+												color: rgba(100, 109, 132, 1);
+												font-size: 0.8rem;
+												font-weight: 600;
+											"
+											>Bàn hàng cùng Food Deli</a
+										>
+									</li>
+									<li class="nav-item">
+										<a
+											class="nav-link ps-0"
+											href="#"
+											style="
+												color: rgba(100, 109, 132, 1);
+												font-size: 0.8rem;
+												font-weight: 600;
+											"
+											>Giải quyết khiếu nại</a
+										>
+									</li>
+									<li class="nav-item">
+										<a
+											class="nav-link ps-0"
+											href="#"
+											style="
+												color: rgba(100, 109, 132, 1);
+												font-size: 0.8rem;
+												font-weight: 600;
+											"
+											>Câu hỏi thường gặp</a
+										>
+									</li>
+								</ul>
+							</div>
+
+							<div class="col-md-3">
+								<p class="fw-bold fs-6 mb-1">Menu</p>
+								<ul class="nav flex-column">
+									<li class="nav-item">
+										<a
+											class="nav-link ps-0"
+											href="#"
+											style="
+												color: rgba(100, 109, 132, 1);
+												font-size: 0.8rem;
+												font-weight: 600;
+											"
+											>Trang chủ</a
+										>
+									</li>
+									<li class="nav-item">
+										<a
+											class="nav-link ps-0"
+											href="#"
+											style="
+												color: rgba(100, 109, 132, 1);
+												font-size: 0.8rem;
+												font-weight: 600;
+											"
+											>Sản phẩm</a
+										>
+									</li>
+									<li class="nav-item">
+										<a
+											class="nav-link ps-0"
+											href="#"
+											style="
+												color: rgba(100, 109, 132, 1);
+												font-size: 0.8rem;
+												font-weight: 600;
+											"
+											>Tin tức, sự kiện</a
+										>
+									</li>
+									<li class="nav-item">
+										<a
+											class="nav-link ps-0"
+											href="#"
+											style="
+												color: rgba(100, 109, 132, 1);
+												font-size: 0.8rem;
+												font-weight: 600;
+											"
+											>Tạp hoá</a
+										>
+									</li>
+									<li class="nav-item">
+										<a
+											class="nav-link ps-0"
+											href="#"
+											style="
+												color: rgba(100, 109, 132, 1);
+												font-size: 0.8rem;
+												font-weight: 600;
+											"
+											>Food News</a
+										>
+									</li>
+								</ul>
+							</div>
+
+							<div class="col-md-3">
+								<p class="fw-bold fs-6 mb-1">Sản phẩm</p>
+								<ul class="nav flex-column">
+									<li class="nav-item">
+										<a
+											class="nav-link ps-0"
+											href="#"
+											style="
+												color: rgba(100, 109, 132, 1);
+												font-size: 0.8rem;
+												font-weight: 600;
+											"
+											>Food Deli Pack</a
+										>
+									</li>
+									<li class="nav-item">
+										<a
+											class="nav-link ps-0"
+											href="#"
+											style="
+												color: rgba(100, 109, 132, 1);
+												font-size: 0.8rem;
+												font-weight: 600;
+											"
+											>Food Deli Now</a
+										>
+									</li>
+									<li class="nav-item">
+										<a
+											class="nav-link ps-0"
+											href="#"
+											style="
+												color: rgba(100, 109, 132, 1);
+												font-size: 0.8rem;
+												font-weight: 600;
+											"
+											>Food Deli Combo</a
+										>
+									</li>
+									<li class="nav-item">
+										<a
+											class="nav-link ps-0"
+											href="#"
+											style="
+												color: rgba(100, 109, 132, 1);
+												font-size: 0.8rem;
+												font-weight: 600;
+											"
+											>Food Deli Set</a
+										>
+									</li>
+									<li class="nav-item">
+										<a
+											class="nav-link ps-0"
+											href="#"
+											style="
+												color: rgba(100, 109, 132, 1);
+												font-size: 0.8rem;
+												font-weight: 600;
+											"
+											>Food Deli Store</a
+										>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Row 3: Company info -->
+				<div class="row border-top py-3">
+					<p class="m-0" style="font-size: 0.75rem">
+						© 2021 Công ty TNHH Tập đoàn Cổng Mặt Trời / Địa chỉ: Tầng 2, NV 5.10 KĐT
+						Viglacera, Hữu Hưng, Đại Mỗ, Hà Nội / Mã số thuế: 0109517477 / Điện thoại:
+						0976 212 555
+					</p>
+				</div>
+			</div>
+		</section>
+		<!-- End Footer section -->
+
+		<!-- Bootstrap Bundle with Popper -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+			crossorigin="anonymous"
+		></script>
+		<script src="./js/main.js"></script>
+	</body>
+</html>
