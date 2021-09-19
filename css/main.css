@@ -36,30 +36,30 @@ dropdown-toggle::after {
 	background: linear-gradient(#05a85e, #b9eed6);
 }
 .menu-section-row-1-col-1 {
-    height: 360px;
-    background: #666 no-repeat;
-    background-size: cover;
-    border-radius: 0.5rem;
+	height: 360px;
+	background: #666 no-repeat;
+	background-size: cover;
+	border-radius: 0.5rem;
 }
 .menu-section-row-1-col-2 {
-    height: 360px;
-    border-radius: 0.5rem;
+	height: 360px;
+	border-radius: 0.5rem;
 }
 
 /* Start Popular Section */
 .pro_category {
-	background: #F6F6FA;
+	background: #f6f6fa;
 	padding: 8px 16px;
-	color: #646D84;
+	color: #646d84;
 	cursor: pointer;
 }
 .pro_category:hover {
-	background: #CDEEDF;
-	color: #05A85E;
+	background: #cdeedf;
+	color: #05a85e;
 }
 .pro_category_active {
-	background: #CDEEDF;
-	color: #05A85E;
+	background: #cdeedf;
+	color: #05a85e;
 }
 /* End Popular Section */
 
@@ -72,3 +72,5 @@ dropdown-toggle::after {
 	background-color: rgb(171, 235, 206);
 }
 /* End Product Section */
+.btn-subcriber {
+}
