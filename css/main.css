@@ -64,6 +64,10 @@ dropdown-toggle::after {
 /* End Popular Section */
 
 /* List Product Section */
+.product:hover {
+	transform: scale(1.02);
+}
+
 .btn-get-all {
 	background-color: rgba(205, 238, 223, 1);
 }
