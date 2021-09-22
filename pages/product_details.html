@@ -19,156 +19,241 @@
 	</head>
 
 	<body>
-		<!-- Start Navbar -->
-		<nav class="border-top border-success border-4">
-			<div class="container px-0" style="border-bottom-color: #ecedf1">
-				<div class="d-flex align-items-center justify-content-between">
-					<div class="d-flex align-items-center">
-						<a href="#" class="nav-link p-0"
-							><img src="../assets/icons/back.svg" alt="" /> &nbsp;<span
-								>Quay lại trang chủ food.com.vn</span
-							>
-						</a>
-					</div>
+		<!-- Start Header -->
+		<header class="border-top border-success border-4" style="border-bottom: .5px solid rgba(0,0,0,.05)!important;">
+			<!-- Top bar -->
+			<div class="container border-bottom">
+				<nav class="navbar justify-content-between align-items-center">
+					<a href="#" class="nav-link p-0 col-lg-6 col-12">
+						<img src="../assets/icons/back.svg" alt="" />
+						&nbsp;<span>Quay lại trang chủ food.com.vn</span>
+					</a>
 
-					<ul class="navbar-nav flex-row">
+					<ul
+						class="
+							navbar-nav
+							flex-row
+							justify-content-start justify-content-lg-end
+							col-lg-6 col-12
+							d-md-flex d-none
+						"
+					>
 						<li class="nav-item me-3">
-							<a class="nav-link d-flex align-items-center" href="#">
+							<a class="nav-link d-flex align-items-center" href="#" style="white-space: nowrap;">
 								<img src="../assets/icons/doc.svg" alt="" />&nbsp;&nbsp;Giới thiệu
 							</a>
 						</li>
 						<li class="nav-item me-3">
-							<a class="nav-link d-flex align-items-center" href="#">
+							<a class="nav-link d-flex align-items-center" href="#" style="white-space: nowrap;">
 								<img src="../assets/icons/store.svg" alt="" />&nbsp;&nbsp;Food Deli
 								Store</a
 							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link d-flex align-items-center" href="#">
+							<a class="nav-link d-flex align-items-center" href="#" style="white-space: nowrap;">
 								<img src="../assets/icons/bag.svg" alt="" />&nbsp;&nbsp;Bán hàng
 								cùng Food Deli</a
 							>
 						</li>
 					</ul>
-				</div>
+				</nav>
 			</div>
-			<div class="container px-0 border-top border-1">
-				<div class="row py-3">
-					<!-- Brand image -->
+			<!-- Top bar -->
+
+			<!-- Start Navbar -->
+			<div class="container">
+				<nav class="navbar navbar-expand-lg py-3">
 					<div class="col-1">
-						<a class="navbar-brand" href="#">
-							<img src="../assets/images/food-deli-logo.png" alt="Food deli logo" />
+						<a class="navbar-brand" href="../index.html">
+							<img
+								src="../assets/images/food-deli-logo.png"
+								alt="Food deli logo"
+								style="min-width: 3rem"
+							/>
 						</a>
 					</div>
+					<button
+						class="btn btn-sm navbar-toggler pall-0"
+						id="menu"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
 
-					<!-- Form search -->
-					<form class="col-8 my-auto">
-						<div class="d-flex justify-content-center align-items-center">
-							<div class="btn-group me-2">
-								<button
-									type="button"
-									class="btn btn-sm btn-success rounded-pill dropdown-toggle px-3"
-									data-bs-toggle="dropdown"
-									aria-expanded="false"
-								>
-									<img src="../assets/icons/bag2.svg" alt="" />&nbsp; Sản phẩm
-								</button>
-								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="#">Sản phẩm 2</a></li>
-									<li><a class="dropdown-item" href="#">Sản phẩm 3</a></li>
-									<li><a class="dropdown-item" href="#">Sản phẩm 4</a></li>
-								</ul>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<div class="row flex-lg-grow-1 mt-3 mt-lg-0">
+							<!-- Form search -->
+							<div class="col-lg-9 col-12 justify-content-end">
+								<form class="offset-lg-1 col-lg-9">
+									<div class="d-flex justify-content-center align-items-center">
+										<div class="dropdown me-3">
+											<button
+												type="button"
+												class="
+													btn btn-sm btn-success
+													rounded-pill
+													dropdown-toggle
+													px-3
+													py-2
+												"
+												data-bs-toggle="dropdown"
+												aria-expanded="false"
+												style="font-weight: 600"
+											>
+												<img src="../assets/icons/bag2.svg" alt="" />&nbsp;
+												Sản phẩm
+											</button>
+											<ul class="dropdown-menu">
+												<li>
+													<a class="dropdown-item" href="#">Sản phẩm 2</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="#">Sản phẩm 3</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="#">Sản phẩm 4</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="flex-grow-1" style="position: relative">
+											<input
+												class="
+													form-control
+													rounded-pill
+													py-2
+													px-3
+													input-search
+												"
+												type="search"
+												placeholder="Tìm kiếm sản phẩm"
+												aria-label="Search"
+											/>
+											<button
+												class="btn btn-sm"
+												type="submit"
+												style="
+													position: absolute;
+													top: 50%;
+													right: 5px;
+													margin-top: -1rem;
+												"
+											>
+												<img src="../assets/icons/search.svg" alt="" />
+											</button>
+										</div>
+									</div>
+								</form>
 							</div>
 
-							<div class="col-8" style="position: relative">
-								<input
-									class="form-control rounded-pill py-1 px-3"
-									type="search"
-									placeholder="Tìm kiếm sản phẩm"
-									aria-label="Search"
-									style="background-color: #e6e6e6"
-								/>
-								<!--   <img src="../assets/icons/search.svg" alt="" style="position: absolute;top:5px;right: 15px;"> -->
-							</div>
-						</div>
-					</form>
-
-					<!-- Cart section -->
-					<ul class="col-3 navbar-nav flex-row justify-content-end align-items-center">
-						<li class="nav-item me-3">
-							<a
-								class="btn btn-sm border rounded-5 position-relative"
-								aria-current="page"
-								href="#"
-							>
-								<img src="../assets/icons/heart.svg" alt="" />
-								<span
-									class="
-										position-absolute
-										top-0
-										start-100
-										translate-middle
-										badge
-										rounded-pill
-										bg-danger
-									"
-									style="font-size: 11px"
-								>
-									99
-								</span>
-							</a>
-						</li>
-						<li class="nav-item me-3">
-							<a
-								class="btn btn-sm border rounded-5 position-relative"
-								aria-current="page"
-								href="#"
-							>
-								<img src="../assets/icons/cart.svg" alt="" />
-								<span
-									class="
-										position-absolute
-										top-0
-										start-100
-										translate-middle
-										badge
-										rounded-pill
-										bg-danger
-									"
-									style="font-size: 11px"
-								>
-									99
-								</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a
+							<!-- Cart section -->
+							<ul
 								class="
-									btn btn-sm
-									border border-success
-									rounded-pill
-									px-3
-									text-success
+									col-lg-3 col-12
+									navbar-nav
+									flex-row
+									justify-content-end
+									align-items-center
+									mt-3 mt-lg-0
 								"
-								href="#"
-								>Đăng nhập</a
 							>
-						</li>
-					</ul>
-				</div>
+								<li class="nav-item me-3">
+									<a
+										class="btn btn-sm border rounded-5 py-2 position-relative"
+										style="border-radius: 8px"
+										aria-current="page"
+										href="#"
+									>
+										<img
+											src="../assets/icons/heart.svg"
+											style="min-width: 1rem"
+											alt=""
+										/>
+										<!-- <span class="d-lg-none" style="font-weight: 600;font-size: 14px;">
+											Sản phẩm yêu thích
+										</span> -->
+										<span
+											class="
+												position-absolute
+												top-0
+												start-100
+												translate-middle
+												badge
+												rounded-pill
+												bg-danger
+											"
+											style="font-size: 11px"
+										>
+											99
+										</span>
+									</a>
+								</li>
+								<li class="nav-item me-3">
+									<a
+										class="btn btn-sm border rounded-5 py-2 position-relative"
+										style="border-radius: 8px"
+										aria-current="page"
+										href="#"
+									>
+										<img
+											src="../assets/icons/cart.svg"
+											style="min-width: 1rem"
+											alt=""
+										/>
+										<span
+											class="
+												position-absolute
+												top-0
+												start-100
+												translate-middle
+												badge
+												rounded-pill
+												bg-danger
+											"
+											style="font-size: 11px"
+										>
+											99
+										</span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a
+										class="
+											btn btn-sm
+											border border-success
+											rounded-pill
+											px-3
+											py-2
+											text-success
+										"
+										href="#"
+										style="white-space: nowrap"
+										>Đăng nhập</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
 			</div>
-		</nav>
-		<!-- End Navbar -->
+			<!-- End Navbar -->
+		</header>
+		<!-- End Header -->
 
 		<!-- Start Detail Product -->
-		<section class="border-top">
+		<section>
 			<div class="container">
-				<div class="row gx-4">
-					<div class="col-md-8 pt-4">
-						<!-- Product overview -->
-						<div class="row gx-4 border py-3 mx-0 rounded-3 shadow">
+				<div class="row g-3 pt-3">
+					<!-- Product overview -->
+					<div class="col-lg-8 col-12">
+						<div class="row g-3 m-0 px-1 shadow-sm" style="border-radius: .75rem;border: .5px solid rgba(0,0,0,.1);">
 							<div class="col-md-6">
-								<div class="row g-2">
+								<div class="row g-2 pb-3">
 									<div class="col-12">
 										<img
 											src="../assets/images/detail_product_1.png"
@@ -341,556 +426,12 @@
 								</div>
 							</div>
 						</div>
-						<!-- Product overview -->
-
-						<!-- Product details -->
-						<div class="p-3 mt-3 border rounded-3 shadow">
-							<h3>Thông tin sản phẩm</h3>
-
-							<p class="text-black-50" style="font-size: 0.875rem">
-								Thịt đùi có vị ngon tương tự phần mông bò và thường được cắt thành
-								lát dày như bít-tết để nướng. Đùi bò nhập khẩu đông lạnh được cấp
-								đông từ thịt bò tươi ngon là sản phẩm có xuất xứ rõ ràng nên đảm bảo
-								an toàn thực phẩm và giàu chất dinh dưỡng. Thịt đùi bò nhập khẩu (ở
-								một số nơi gọi là thịt mông ngoài) là phần thịt mông hay đùi sau của
-								bò, ưu điểm của phần thịt này là nhiều nạc, ít mỡ, thịt mềm. Là món
-								ăn tuyệt vời cho bữa cuối tuần, đặc biệt là khi kết hợp với các món
-								ăn tiện lợi như khoai tây nghiền hoặc cơm.
-							</p>
-
-							<p class="text-black-50" style="font-size: 0.875rem">
-								Thịt đùi bò đông lạnh với phương pháp làm đông lạnh cấp tốc từ những
-								miếng thịt bò nhập khẩu từ Úc tươi ngon trong thời gian nhanh nhất,
-								điều này giúp các dinh dưỡng thất thoát sẽ ít hơn, chất lượng sẽ
-								được giữ không kém gì so với thịt bò tươi
-							</p>
-
-							<p
-								class="text-black-50 collapse"
-								style="font-size: 0.875rem"
-								id="view-more"
-							>
-								Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-								Perspiciatis debitis ipsum libero ex saepe nisi eligendi explicabo
-								esse magni, labore distinctio dolor neque totam, hic provident amet
-								voluptates recusandae? Dolores impedit eius laborum accusantium,
-								assumenda repellat, repellendus neque nostrum modi ullam accusamus
-								possimus illum repudiandae vel est odio voluptatem perferendis
-								consequatur officia quis in similique. Saepe possimus reiciendis ut
-								error rem beatae quia vitae quod cum quibusdam eveniet sint, ducimus
-								velit ex enim suscipit sit earum deleniti ad officia odio
-								consequatur modi optio. Odit, quasi quis facere doloribus asperiores
-								ratione. Velit aspernatur laborum, fugit perferendis quam harum in
-								laudantium quaerat.
-							</p>
-
-							<button
-								class="btn btn-sm text-black-50 fs-6 mb-3 ps-0"
-								style="font-weight: 600"
-								type="button"
-								data-bs-toggle="collapse"
-								data-bs-target="#view-more"
-								aria-expanded="false"
-								aria-controls="collapseExample"
-							>
-								Xem thêm&nbsp;
-								<svg
-									width="16"
-									height="16"
-									viewBox="0 0 16 16"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<path
-										d="M8.00001 11.2C7.53335 11.2 7.06668 11.02 6.71335 10.6667L2.36668 6.32005C2.17335 6.12672 2.17335 5.80672 2.36668 5.61338C2.56001 5.42005 2.88001 5.42005 3.07335 5.61338L7.42001 9.96005C7.74001 10.28 8.26001 10.28 8.58001 9.96005L12.9267 5.61338C13.12 5.42005 13.44 5.42005 13.6333 5.61338C13.8267 5.80672 13.8267 6.12672 13.6333 6.32005L9.28668 10.6667C8.93335 11.02 8.46668 11.2 8.00001 11.2Z"
-										fill="#05A85E"
-									/>
-								</svg>
-							</button>
-
-							<div class="d-flex align-items-center pt-3 border-top">
-								<p class="mb-0 fw-bold text-black-50" style="font-size: 14px">
-									Bạn có hài lòng với thông tin sản phẩm này không?
-								</p>
-
-								<a
-									href="#"
-									class="
-										btn btn-sm
-										rounded-pill
-										px-3
-										btn-light
-										fw-bold
-										text-black-50 text-center
-										d-block
-										ms-3
-									"
-								>
-									<img src="../assets/icons/satisfied.svg" alt="" />
-									&nbsp;<span style="vertical-align: middle; font-size: 14px"
-										>Hài lòng</span
-									>
-								</a>
-								<a
-									href="#"
-									class="
-										btn btn-sm
-										rounded-pill
-										px-3
-										btn-light
-										fw-bold
-										text-black-50 text-center
-										d-block
-										ms-1
-									"
-								>
-									<img src="../assets/icons/not_satisfied.svg" alt="" />
-									&nbsp;<span style="vertical-align: middle; font-size: 14px"
-										>Chưa hài lòng</span
-									>
-								</a>
-							</div>
-						</div>
-						<!-- Product details -->
-
-						<!-- Start Review -->
-						<div class="p-3 mt-3 border rounded-3 shadow">
-							<h3>Đánh giá sản phẩm</h3>
-
-							<div class="d-flex align-items-center">
-								<div class="d-flex justify-content-between align-items-center me-1">
-									<div class="d-inline-block" style="margin-right: 3px">
-										<img
-											src="../assets/icons/un_rating_star.svg"
-											style="vertical-align: sub"
-											alt=""
-										/>
-									</div>
-									<div class="d-inline-block" style="margin-right: 3px">
-										<img
-											src="../assets/icons/un_rating_star.svg"
-											style="vertical-align: sub"
-											alt=""
-										/>
-									</div>
-									<div class="d-inline-block" style="margin-right: 3px">
-										<img
-											src="../assets/icons/un_rating_star.svg"
-											style="vertical-align: sub"
-											alt=""
-										/>
-									</div>
-									<div class="d-inline-block" style="margin-right: 3px">
-										<img
-											src="../assets/icons/un_rating_star.svg"
-											style="vertical-align: sub"
-											alt=""
-										/>
-									</div>
-									<div class="d-inline-block">
-										<img
-											src="../assets/icons/rating_star.svg"
-											style="vertical-align: sub"
-											alt=""
-										/>
-									</div>
-								</div>
-								<p
-									class="mb-0"
-									style="font-weight: 500; color: #646d84; font-size: 12px"
-								>
-									(102 đánh giá)
-								</p>
-							</div>
-						</div>
-						<!-- End Review -->
-
-						<!-- Start Q&A -->
-						<div class="mt-3 border rounded-3 shadow">
-							<h3 class="pt-3 pb-2 px-3">Hỏi đáp về sản phẩm</h3>
-
-							<!-- Question Form -->
-							<form
-								action="#"
-								method="get"
-								class="p-3"
-								style="background-color: rgba(249, 250, 252, 1)"
-							>
-								<div class="row gx-3">
-									<div class="col-5">
-										<div class="form-floating mb-2">
-											<input
-												type="text"
-												class="form-control"
-												id="full-name"
-												placeholder="Họ và tên"
-												style="border-radius: 0.5rem"
-											/>
-											<label class="text-black-50 fw-bold" for="full-name"
-												>Họ và tên</label
-											>
-										</div>
-										<div class="form-floating mb-2">
-											<input
-												type="text"
-												class="form-control"
-												id="phone_number"
-												placeholder="Số điện thoại"
-												style="border-radius: 0.5rem"
-											/>
-											<label class="text-black-50 fw-bold" for="phone_number"
-												>Số điện thoại</label
-											>
-										</div>
-										<div class="form-floating">
-											<input
-												type="email"
-												class="form-control"
-												id="email"
-												placeholder="name@example.com"
-												style="border-radius: 0.5rem"
-											/>
-											<label class="text-black-50 fw-bold" for="email"
-												>Email</label
-											>
-										</div>
-									</div>
-
-									<div class="col-7">
-										<div class="form-floating h-100 position-relative">
-											<textarea
-												class="form-control h-100"
-												placeholder="Leave a comment here"
-												id="floatingTextarea"
-											></textarea>
-											<label
-												class="text-black-50 fw-bold"
-												for="floatingTextarea"
-												>Bạn có thắc mắc gì về sản phẩm?</label
-											>
-											<button
-												type="submit"
-												class="
-													position-absolute
-													btn btn-sm btn-outline-success
-													py-2
-													px-3
-													rounded-pill
-												"
-												style="
-													bottom: 0.5rem;
-													right: 0.5rem;
-													font-weight: 600;
-												"
-											>
-												Gửi
-											</button>
-										</div>
-									</div>
-								</div>
-							</form>
-							<!-- Question Form -->
-
-							<!-- Question List -->
-							<div class="p-3">
-								<!-- Customer feedback -->
-								<div>
-									<h6
-										class="text-success"
-										style="font-size: 12px; font-weight: 600"
-									>
-										Wade Warren
-									</h6>
-									<p
-										style="font-size: 12px; font-weight: 600"
-										class="text-black-50"
-									>
-										Amet minim mollit non deserunt ullamco est sit aliqua dolor
-										do amet sint. Velit officia consequat duis enim velit
-										mollit. Exercitation veniam consequat sunt nostrud amet.
-									</p>
-								</div>
-								<!-- Admin -->
-								<div class="d-flex align-items-center">
-									<div class="flex-shrink-1 me-1">
-										<img
-											src="../assets/images/logo-round.png"
-											style="width: 1.5rem; height: 1.5rem"
-											alt=""
-										/>
-									</div>
-									<span class="ms-2 text-black-50" style="font-weight: 600;font-size: 12px;">
-										Jenny Wilson
-									</span>
-									<span class="ms-2 px-2 py-1 border border-success text-success rounded-3" style="font-weight: 600;font-size: 12px;"
-										>Quản trị viên</span
-									>
-								</div>
-								<div class="d-flex align-items-center py-2">
-									<div class="p-3 flex-shrink-1">
-									</div>
-									<p class="mb-0 text-black-50" style="font-size: 12px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem illo ut deleniti quia facilis obcaecati repellendus dolorum consequatur, velit in id reprehenderit, ratione tempore unde nulla natus exercitationem itaque minima?</p>
-								</div>
-								<div class="d-flex align-items-center">
-									<div class="p-3 flex-shrink-1"></div>
-									<a
-										href="#"
-										class="
-											fw-bold
-											text-start
-										"
-										style="text-decoration: none;"
-									>
-										<img src="../assets/icons/satisfied.svg" alt="" style="width: 1rem;height: 1rem;" />
-										<span style="vertical-align: middle; font-size: 12px;"
-											>Hài lòng</span
-										>
-									</a>
-									&nbsp;&nbsp;
-									<a
-										href="#"
-										class="
-											fw-bold
-											text-start
-										"
-										style="text-decoration: none;"
-									>
-										<img src="../assets/icons/not_satisfied.svg" alt="" style="width: 1rem;height: 1rem;" />
-										<span style="vertical-align: middle; font-size: 12px;"
-											>Chưa hài lòng</span
-										>
-									</a>
-								</div>
-								<!-- Admin -->
-							</div>
-							<hr class="dropdown-divider mx-3">
-							<div class="p-3">
-								<!-- Customer feedback -->
-								<div>
-									<h6
-										class="text-success"
-										style="font-size: 12px; font-weight: 600"
-									>
-										Wade Warren
-									</h6>
-									<p
-										style="font-size: 12px; font-weight: 600"
-										class="text-black-50"
-									>
-										Amet minim mollit non deserunt ullamco est sit aliqua dolor
-										do amet sint. Velit officia consequat duis enim velit
-										mollit. Exercitation veniam consequat sunt nostrud amet.
-									</p>
-								</div>
-								<!-- Admin -->
-								<div class="d-flex align-items-center">
-									<div class="flex-shrink-1 me-1">
-										<img
-											src="../assets/images/logo-round.png"
-											style="width: 1.5rem; height: 1.5rem"
-											alt=""
-										/>
-									</div>
-									<span class="ms-2 text-black-50" style="font-weight: 600;font-size: 12px;">
-										Jenny Wilson
-									</span>
-									<span class="ms-2 px-2 py-1 border border-success text-success rounded-3" style="font-weight: 600;font-size: 12px;"
-										>Quản trị viên</span
-									>
-								</div>
-								<div class="d-flex align-items-center py-2">
-									<div class="p-3 flex-shrink-1">
-									</div>
-									<p class="mb-0 text-black-50" style="font-size: 12px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem illo ut deleniti quia facilis obcaecati repellendus dolorum consequatur, velit in id reprehenderit, ratione tempore unde nulla natus exercitationem itaque minima?</p>
-								</div>
-								<div class="d-flex align-items-center">
-									<div class="p-3 flex-shrink-1"></div>
-									<a
-										href="#"
-										class="
-											fw-bold
-											text-start
-										"
-										style="text-decoration: none;"
-									>
-										<img src="../assets/icons/satisfied.svg" alt="" style="width: 1rem;height: 1rem;" />
-										<span style="vertical-align: middle; font-size: 12px;"
-											>Hài lòng</span
-										>
-									</a>
-									&nbsp;&nbsp;
-									<a
-										href="#"
-										class="
-											fw-bold
-											text-start
-										"
-										style="text-decoration: none;"
-									>
-										<img src="../assets/icons/not_satisfied.svg" alt="" style="width: 1rem;height: 1rem;" />
-										<span style="vertical-align: middle; font-size: 12px;"
-											>Chưa hài lòng</span
-										>
-									</a>
-								</div>
-								<!-- Admin -->
-							</div>
-							<hr class="dropdown-divider mx-3">
-							<div class="p-3">
-								<!-- Customer feedback -->
-								<div>
-									<h6
-										class="text-success"
-										style="font-size: 12px; font-weight: 600"
-									>
-										Wade Warren
-									</h6>
-									<p
-										style="font-size: 12px; font-weight: 600"
-										class="text-black-50"
-									>
-										Amet minim mollit non deserunt ullamco est sit aliqua dolor
-										do amet sint. Velit officia consequat duis enim velit
-										mollit. Exercitation veniam consequat sunt nostrud amet.
-									</p>
-								</div>
-								<!-- Admin -->
-								<div class="d-flex align-items-center">
-									<div class="flex-shrink-1 me-1">
-										<img
-											src="../assets/images/logo-round.png"
-											style="width: 1.5rem; height: 1.5rem"
-											alt=""
-										/>
-									</div>
-									<span class="ms-2 text-black-50" style="font-weight: 600;font-size: 12px;">
-										Jenny Wilson
-									</span>
-									<span class="ms-2 px-2 py-1 border border-success text-success rounded-3" style="font-weight: 600;font-size: 12px;"
-										>Quản trị viên</span
-									>
-								</div>
-								<div class="d-flex align-items-center py-2">
-									<div class="p-3 flex-shrink-1">
-									</div>
-									<p class="mb-0 text-black-50" style="font-size: 12px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem illo ut deleniti quia facilis obcaecati repellendus dolorum consequatur, velit in id reprehenderit, ratione tempore unde nulla natus exercitationem itaque minima?</p>
-								</div>
-								<div class="d-flex align-items-center">
-									<div class="p-3 flex-shrink-1"></div>
-									<a
-										href="#"
-										class="
-											fw-bold
-											text-start
-										"
-										style="text-decoration: none;"
-									>
-										<img src="../assets/icons/satisfied.svg" alt="" style="width: 1rem;height: 1rem;" />
-										<span style="vertical-align: middle; font-size: 12px;"
-											>Hài lòng</span
-										>
-									</a>
-									&nbsp;&nbsp;
-									<a
-										href="#"
-										class="
-											fw-bold
-											text-start
-										"
-										style="text-decoration: none;"
-									>
-										<img src="../assets/icons/not_satisfied.svg" alt="" style="width: 1rem;height: 1rem;" />
-										<span style="vertical-align: middle; font-size: 12px;"
-											>Chưa hài lòng</span
-										>
-									</a>
-								</div>
-								<!-- Admin -->
-							</div>
-							<hr class="dropdown-divider mx-3"><div class="p-3">
-								<!-- Customer feedback -->
-								<div>
-									<h6
-										class="text-success"
-										style="font-size: 12px; font-weight: 600"
-									>
-										Wade Warren
-									</h6>
-									<p
-										style="font-size: 12px; font-weight: 600"
-										class="text-black-50"
-									>
-										Amet minim mollit non deserunt ullamco est sit aliqua dolor
-										do amet sint. Velit officia consequat duis enim velit
-										mollit. Exercitation veniam consequat sunt nostrud amet.
-									</p>
-								</div>
-								<!-- Admin -->
-								<div class="d-flex align-items-center">
-									<div class="flex-shrink-1 me-1">
-										<img
-											src="../assets/images/logo-round.png"
-											style="width: 1.5rem; height: 1.5rem"
-											alt=""
-										/>
-									</div>
-									<span class="ms-2 text-black-50" style="font-weight: 600;font-size: 12px;">
-										Jenny Wilson
-									</span>
-									<span class="ms-2 px-2 py-1 border border-success text-success rounded-3" style="font-weight: 600;font-size: 12px;"
-										>Quản trị viên</span
-									>
-								</div>
-								<div class="d-flex align-items-center py-2">
-									<div class="p-3 flex-shrink-1">
-									</div>
-									<p class="mb-0 text-black-50" style="font-size: 12px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem illo ut deleniti quia facilis obcaecati repellendus dolorum consequatur, velit in id reprehenderit, ratione tempore unde nulla natus exercitationem itaque minima?</p>
-								</div>
-								<div class="d-flex align-items-center">
-									<div class="p-3 flex-shrink-1"></div>
-									<a
-										href="#"
-										class="
-											fw-bold
-											text-start
-										"
-										style="text-decoration: none;"
-									>
-										<img src="../assets/icons/satisfied.svg" alt="" style="width: 1rem;height: 1rem;" />
-										<span style="vertical-align: middle; font-size: 12px;"
-											>Hài lòng</span
-										>
-									</a>
-									&nbsp;&nbsp;
-									<a
-										href="#"
-										class="
-											fw-bold
-											text-start
-										"
-										style="text-decoration: none;"
-									>
-										<img src="../assets/icons/not_satisfied.svg" alt="" style="width: 1rem;height: 1rem;" />
-										<span style="vertical-align: middle; font-size: 12px;"
-											>Chưa hài lòng</span
-										>
-									</a>
-								</div>
-								<!-- Admin -->
-							</div>
-
-							<!-- Question List -->
-						</div>
-						<!-- End Q&A -->
 					</div>
+					<!-- Product overview -->
 
 					<!-- Start add to cart -->
-					<div class="col-md-4">
-						<div
-							class="card shadow"
-							style="border-top: 0; border-radius: 0 0 0.75rem 0.75rem"
-						>
-							<div class="px-3 pt-3">
+					<div class="col-lg-4 col-12">
+							<div class="px-3 pt-3 shadow-sm" style="border-radius: .75rem;border: .5px solid rgba(0,0,0,.1);">
 								<div class="row justify-content-between align-items-center">
 									<p class="col mb-0">Số lượng</p>
 
@@ -1025,11 +566,11 @@
 									</div>
 								</div>
 
-								<div class="text-center mt-3">
+								<div class="text-center py-2">
 									<a
 										href="#"
 										class="link-primary"
-										style="text-decoration: none !important"
+										style="text-decoration: none !important; font-weight: 600;font-size: 12px;"
 										>Hướng dẫn thanh toán</a
 									>
 								</div>
@@ -1038,7 +579,7 @@
 									class="d-flex align-items-center position-relative py-2"
 									style="
 										background-color: rgba(205, 238, 223, 1);
-										margin: 4rem -1rem 0 -1rem;
+										margin: 0 -1rem;
 										border-radius: 0 0 0.75rem 0.75rem;
 									"
 								>
@@ -1078,7 +619,7 @@
 											</p>
 										</li>
 									</ul>
-									<div
+<!-- 									<div
 										class="position-absolute"
 										style="top: -4rem; right: 0.6rem"
 									>
@@ -1086,12 +627,629 @@
 											src="../assets/images/detail_product_cart.png"
 											alt=""
 										/>
-									</div>
+									</div> -->
 								</div>
 							</div>
-						</div>
 					</div>
 					<!-- End add to cart -->
+				</div>
+
+				<div class="row gx-4">
+					<div class="col-lg-8 col-12">
+						<!-- Product details -->
+						<div class="p-3 mt-3 border shadow-sm" style="border-radius: .75rem;">
+							<h3>Thông tin sản phẩm</h3>
+
+							<p class="text-black-50" style="font-size: 0.875rem">
+								Thịt đùi có vị ngon tương tự phần mông bò và thường được cắt thành
+								lát dày như bít-tết để nướng. Đùi bò nhập khẩu đông lạnh được cấp
+								đông từ thịt bò tươi ngon là sản phẩm có xuất xứ rõ ràng nên đảm bảo
+								an toàn thực phẩm và giàu chất dinh dưỡng. Thịt đùi bò nhập khẩu (ở
+								một số nơi gọi là thịt mông ngoài) là phần thịt mông hay đùi sau của
+								bò, ưu điểm của phần thịt này là nhiều nạc, ít mỡ, thịt mềm. Là món
+								ăn tuyệt vời cho bữa cuối tuần, đặc biệt là khi kết hợp với các món
+								ăn tiện lợi như khoai tây nghiền hoặc cơm.
+							</p>
+
+							<p class="text-black-50" style="font-size: 0.875rem">
+								Thịt đùi bò đông lạnh với phương pháp làm đông lạnh cấp tốc từ những
+								miếng thịt bò nhập khẩu từ Úc tươi ngon trong thời gian nhanh nhất,
+								điều này giúp các dinh dưỡng thất thoát sẽ ít hơn, chất lượng sẽ
+								được giữ không kém gì so với thịt bò tươi
+							</p>
+
+							<p
+								class="text-black-50 collapse"
+								style="font-size: 0.875rem"
+								id="view-more"
+							>
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+								Perspiciatis debitis ipsum libero ex saepe nisi eligendi explicabo
+								esse magni, labore distinctio dolor neque totam, hic provident amet
+								voluptates recusandae? Dolores impedit eius laborum accusantium,
+								assumenda repellat, repellendus neque nostrum modi ullam accusamus
+								possimus illum repudiandae vel est odio voluptatem perferendis
+								consequatur officia quis in similique. Saepe possimus reiciendis ut
+								error rem beatae quia vitae quod cum quibusdam eveniet sint, ducimus
+								velit ex enim suscipit sit earum deleniti ad officia odio
+								consequatur modi optio. Odit, quasi quis facere doloribus asperiores
+								ratione. Velit aspernatur laborum, fugit perferendis quam harum in
+								laudantium quaerat.
+							</p>
+
+							<button
+								class="btn btn-sm text-black-50 fs-6 mb-3 ps-0"
+								style="font-weight: 600"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#view-more"
+								aria-expanded="false"
+								aria-controls="collapseExample"
+							>
+								Xem thêm&nbsp;
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M8.00001 11.2C7.53335 11.2 7.06668 11.02 6.71335 10.6667L2.36668 6.32005C2.17335 6.12672 2.17335 5.80672 2.36668 5.61338C2.56001 5.42005 2.88001 5.42005 3.07335 5.61338L7.42001 9.96005C7.74001 10.28 8.26001 10.28 8.58001 9.96005L12.9267 5.61338C13.12 5.42005 13.44 5.42005 13.6333 5.61338C13.8267 5.80672 13.8267 6.12672 13.6333 6.32005L9.28668 10.6667C8.93335 11.02 8.46668 11.2 8.00001 11.2Z"
+										fill="#05A85E"
+									/>
+								</svg>
+							</button>
+
+							<div class="d-flex flex-wrap justify-content-start align-items-center pt-3 border-top">
+								<p class="mb-lg-0 fw-bold text-black-50" style="font-size: 14px;">
+									Bạn có hài lòng với thông tin sản phẩm này không?
+								</p>
+
+								<a
+									href="#"
+									class="
+										btn btn-sm
+										rounded-pill
+										px-3
+										btn-light
+										fw-bold
+										text-black-50 text-center
+										d-block
+										ms-3
+									"
+								>
+									<img src="../assets/icons/satisfied.svg" alt="" />
+									&nbsp;<span style="vertical-align: middle; font-size: 14px;white-space: nowrap;"
+										>Hài lòng</span
+									>
+								</a>
+								&nbsp;
+								<a
+									href="#"
+									class="
+										btn btn-sm
+										rounded-pill
+										px-3
+										btn-light
+										fw-bold
+										text-black-50 text-center
+										d-block
+										ms-1
+									"
+								>
+									<img src="../assets/icons/not_satisfied.svg" alt="" />
+									&nbsp;<span style="vertical-align: middle; font-size: 14px;white-space: nowrap;"
+										>Chưa hài lòng</span
+									>
+								</a>
+							</div>
+						</div>
+						<!-- Product details -->
+
+						<!-- Start Review -->
+						<div class="p-3 mt-3 border shadow-sm" style="border-radius: .75rem;">
+							<h3>Đánh giá sản phẩm</h3>
+
+							<div class="d-flex align-items-center">
+								<div class="d-flex justify-content-between align-items-center me-1">
+									<div class="d-inline-block" style="margin-right: 3px">
+										<img
+											src="../assets/icons/un_rating_star.svg"
+											style="vertical-align: sub"
+											alt=""
+										/>
+									</div>
+									<div class="d-inline-block" style="margin-right: 3px">
+										<img
+											src="../assets/icons/un_rating_star.svg"
+											style="vertical-align: sub"
+											alt=""
+										/>
+									</div>
+									<div class="d-inline-block" style="margin-right: 3px">
+										<img
+											src="../assets/icons/un_rating_star.svg"
+											style="vertical-align: sub"
+											alt=""
+										/>
+									</div>
+									<div class="d-inline-block" style="margin-right: 3px">
+										<img
+											src="../assets/icons/un_rating_star.svg"
+											style="vertical-align: sub"
+											alt=""
+										/>
+									</div>
+									<div class="d-inline-block">
+										<img
+											src="../assets/icons/rating_star.svg"
+											style="vertical-align: sub"
+											alt=""
+										/>
+									</div>
+								</div>
+								<p
+									class="mb-0"
+									style="font-weight: 500; color: #646d84; font-size: 12px"
+								>
+									(102 đánh giá)
+								</p>
+							</div>
+						</div>
+						<!-- End Review -->
+
+						<!-- Start Q&A -->
+						<div class="mt-3 border shadow-sm" style="border-radius: .75rem;">
+							<h3 class="pt-3 pb-2 px-2 px-md-3">Hỏi đáp về sản phẩm</h3>
+
+							<!-- Question Form -->
+							<form
+								action="#"
+								method="get"
+								class="p-2 p-md-3"
+								style="background-color: rgba(249, 250, 252, 1);margin: 1px;"
+							>
+								<div class="row g-3">
+									<div class="col-md-5 col-12">
+										<div class="form-floating mb-2">
+											<input
+												type="text"
+												class="form-control"
+												id="full-name"
+												placeholder="Họ và tên"
+												style="border-radius: 0.5rem"
+											/>
+											<label class="text-black-50 fw-bold" for="full-name"
+												>Họ và tên</label
+											>
+										</div>
+										<div class="form-floating mb-2">
+											<input
+												type="text"
+												class="form-control"
+												id="phone_number"
+												placeholder="Số điện thoại"
+												style="border-radius: 0.5rem"
+											/>
+											<label class="text-black-50 fw-bold" for="phone_number"
+												>Số điện thoại</label
+											>
+										</div>
+										<div class="form-floating">
+											<input
+												type="email"
+												class="form-control"
+												id="email"
+												placeholder="name@example.com"
+												style="border-radius: 0.5rem"
+											/>
+											<label class="text-black-50 fw-bold" for="email"
+												>Email</label
+											>
+										</div>
+									</div>
+
+									<div class="col-md-7 col-12">
+										<div class="form-floating h-100 position-relative">
+											<textarea
+												class="form-control h-100"
+												placeholder="Leave a comment here"
+												id="floatingTextarea"
+											></textarea>
+											<label
+												class="text-black-50 fw-bold"
+												for="floatingTextarea"
+												>Bạn có thắc mắc gì về sản phẩm?</label
+											>
+											<button
+												type="submit"
+												class="
+													position-absolute
+													btn btn-sm btn-outline-success
+													py-2
+													px-3
+													rounded-pill
+												"
+												style="
+													bottom: 0.5rem;
+													right: 0.5rem;
+													font-weight: 600;
+												"
+											>
+												Gửi
+											</button>
+										</div>
+									</div>
+								</div>
+							</form>
+							<!-- Question Form -->
+
+							<!-- Question List -->
+							<div class="p-3">
+								<!-- Customer feedback -->
+								<div>
+									<h6
+										class="text-success"
+										style="font-size: 12px; font-weight: 600"
+									>
+										Wade Warren
+									</h6>
+									<p
+										style="font-size: 12px; font-weight: 600"
+										class="text-black-50"
+									>
+										Amet minim mollit non deserunt ullamco est sit aliqua dolor
+										do amet sint. Velit officia consequat duis enim velit
+										mollit. Exercitation veniam consequat sunt nostrud amet.
+									</p>
+								</div>
+								<!-- Admin -->
+								<div class="d-flex align-items-center">
+									<div class="flex-shrink-1 me-1">
+										<img
+											src="../assets/images/logo-round.png"
+											style="width: 1.5rem; height: 1.5rem"
+											alt=""
+										/>
+									</div>
+									<span
+										class="ms-2 text-black-50"
+										style="font-weight: 600; font-size: 12px"
+									>
+										Jenny Wilson
+									</span>
+									<span
+										class="
+											ms-2
+											px-2
+											py-1
+											border border-success
+											text-success
+											rounded-3
+										"
+										style="font-weight: 600; font-size: 12px"
+										>Quản trị viên</span
+									>
+								</div>
+								<div class="d-flex align-items-center py-2">
+									<div class="p-3 flex-shrink-1"></div>
+									<p class="mb-0 text-black-50" style="font-size: 12px">
+										Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+										Dolorem illo ut deleniti quia facilis obcaecati repellendus
+										dolorum consequatur, velit in id reprehenderit, ratione
+										tempore unde nulla natus exercitationem itaque minima?
+									</p>
+								</div>
+								<div class="d-flex align-items-center">
+									<div class="p-3 flex-shrink-1"></div>
+									<a
+										href="#"
+										class="fw-bold text-start"
+										style="text-decoration: none"
+									>
+										<img
+											src="../assets/icons/satisfied.svg"
+											alt=""
+											style="width: 1rem; height: 1rem"
+										/>
+										<span style="vertical-align: middle; font-size: 12px"
+											>Hài lòng</span
+										>
+									</a>
+									&nbsp;&nbsp;
+									<a
+										href="#"
+										class="fw-bold text-start"
+										style="text-decoration: none"
+									>
+										<img
+											src="../assets/icons/not_satisfied.svg"
+											alt=""
+											style="width: 1rem; height: 1rem"
+										/>
+										<span style="vertical-align: middle; font-size: 12px"
+											>Chưa hài lòng</span
+										>
+									</a>
+								</div>
+								<!-- Admin -->
+							</div>
+							<hr class="dropdown-divider mx-3" />
+							<div class="p-3">
+								<!-- Customer feedback -->
+								<div>
+									<h6
+										class="text-success"
+										style="font-size: 12px; font-weight: 600"
+									>
+										Wade Warren
+									</h6>
+									<p
+										style="font-size: 12px; font-weight: 600"
+										class="text-black-50"
+									>
+										Amet minim mollit non deserunt ullamco est sit aliqua dolor
+										do amet sint. Velit officia consequat duis enim velit
+										mollit. Exercitation veniam consequat sunt nostrud amet.
+									</p>
+								</div>
+								<!-- Admin -->
+								<div class="d-flex align-items-center">
+									<div class="flex-shrink-1 me-1">
+										<img
+											src="../assets/images/logo-round.png"
+											style="width: 1.5rem; height: 1.5rem"
+											alt=""
+										/>
+									</div>
+									<span
+										class="ms-2 text-black-50"
+										style="font-weight: 600; font-size: 12px"
+									>
+										Jenny Wilson
+									</span>
+									<span
+										class="
+											ms-2
+											px-2
+											py-1
+											border border-success
+											text-success
+											rounded-3
+										"
+										style="font-weight: 600; font-size: 12px"
+										>Quản trị viên</span
+									>
+								</div>
+								<div class="d-flex align-items-center py-2">
+									<div class="p-3 flex-shrink-1"></div>
+									<p class="mb-0 text-black-50" style="font-size: 12px">
+										Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+										Dolorem illo ut deleniti quia facilis obcaecati repellendus
+										dolorum consequatur, velit in id reprehenderit, ratione
+										tempore unde nulla natus exercitationem itaque minima?
+									</p>
+								</div>
+								<div class="d-flex align-items-center">
+									<div class="p-3 flex-shrink-1"></div>
+									<a
+										href="#"
+										class="fw-bold text-start"
+										style="text-decoration: none"
+									>
+										<img
+											src="../assets/icons/satisfied.svg"
+											alt=""
+											style="width: 1rem; height: 1rem"
+										/>
+										<span style="vertical-align: middle; font-size: 12px"
+											>Hài lòng</span
+										>
+									</a>
+									&nbsp;&nbsp;
+									<a
+										href="#"
+										class="fw-bold text-start"
+										style="text-decoration: none"
+									>
+										<img
+											src="../assets/icons/not_satisfied.svg"
+											alt=""
+											style="width: 1rem; height: 1rem"
+										/>
+										<span style="vertical-align: middle; font-size: 12px"
+											>Chưa hài lòng</span
+										>
+									</a>
+								</div>
+								<!-- Admin -->
+							</div>
+							<hr class="dropdown-divider mx-3" />
+							<div class="p-3">
+								<!-- Customer feedback -->
+								<div>
+									<h6
+										class="text-success"
+										style="font-size: 12px; font-weight: 600"
+									>
+										Wade Warren
+									</h6>
+									<p
+										style="font-size: 12px; font-weight: 600"
+										class="text-black-50"
+									>
+										Amet minim mollit non deserunt ullamco est sit aliqua dolor
+										do amet sint. Velit officia consequat duis enim velit
+										mollit. Exercitation veniam consequat sunt nostrud amet.
+									</p>
+								</div>
+								<!-- Admin -->
+								<div class="d-flex align-items-center">
+									<div class="flex-shrink-1 me-1">
+										<img
+											src="../assets/images/logo-round.png"
+											style="width: 1.5rem; height: 1.5rem"
+											alt=""
+										/>
+									</div>
+									<span
+										class="ms-2 text-black-50"
+										style="font-weight: 600; font-size: 12px"
+									>
+										Jenny Wilson
+									</span>
+									<span
+										class="
+											ms-2
+											px-2
+											py-1
+											border border-success
+											text-success
+											rounded-3
+										"
+										style="font-weight: 600; font-size: 12px"
+										>Quản trị viên</span
+									>
+								</div>
+								<div class="d-flex align-items-center py-2">
+									<div class="p-3 flex-shrink-1"></div>
+									<p class="mb-0 text-black-50" style="font-size: 12px">
+										Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+										Dolorem illo ut deleniti quia facilis obcaecati repellendus
+										dolorum consequatur, velit in id reprehenderit, ratione
+										tempore unde nulla natus exercitationem itaque minima?
+									</p>
+								</div>
+								<div class="d-flex align-items-center">
+									<div class="p-3 flex-shrink-1"></div>
+									<a
+										href="#"
+										class="fw-bold text-start"
+										style="text-decoration: none"
+									>
+										<img
+											src="../assets/icons/satisfied.svg"
+											alt=""
+											style="width: 1rem; height: 1rem"
+										/>
+										<span style="vertical-align: middle; font-size: 12px"
+											>Hài lòng</span
+										>
+									</a>
+									&nbsp;&nbsp;
+									<a
+										href="#"
+										class="fw-bold text-start"
+										style="text-decoration: none"
+									>
+										<img
+											src="../assets/icons/not_satisfied.svg"
+											alt=""
+											style="width: 1rem; height: 1rem"
+										/>
+										<span style="vertical-align: middle; font-size: 12px"
+											>Chưa hài lòng</span
+										>
+									</a>
+								</div>
+								<!-- Admin -->
+							</div>
+							<hr class="dropdown-divider mx-3" />
+							<div class="p-3">
+								<!-- Customer feedback -->
+								<div>
+									<h6
+										class="text-success"
+										style="font-size: 12px; font-weight: 600"
+									>
+										Wade Warren
+									</h6>
+									<p
+										style="font-size: 12px; font-weight: 600"
+										class="text-black-50"
+									>
+										Amet minim mollit non deserunt ullamco est sit aliqua dolor
+										do amet sint. Velit officia consequat duis enim velit
+										mollit. Exercitation veniam consequat sunt nostrud amet.
+									</p>
+								</div>
+								<!-- Admin -->
+								<div class="d-flex align-items-center">
+									<div class="flex-shrink-1 me-1">
+										<img
+											src="../assets/images/logo-round.png"
+											style="width: 1.5rem; height: 1.5rem"
+											alt=""
+										/>
+									</div>
+									<span
+										class="ms-2 text-black-50"
+										style="font-weight: 600; font-size: 12px"
+									>
+										Jenny Wilson
+									</span>
+									<span
+										class="
+											ms-2
+											px-2
+											py-1
+											border border-success
+											text-success
+											rounded-3
+										"
+										style="font-weight: 600; font-size: 12px"
+										>Quản trị viên</span
+									>
+								</div>
+								<div class="d-flex align-items-center py-2">
+									<div class="p-3 flex-shrink-1"></div>
+									<p class="mb-0 text-black-50" style="font-size: 12px">
+										Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+										Dolorem illo ut deleniti quia facilis obcaecati repellendus
+										dolorum consequatur, velit in id reprehenderit, ratione
+										tempore unde nulla natus exercitationem itaque minima?
+									</p>
+								</div>
+								<div class="d-flex align-items-center">
+									<div class="p-3 flex-shrink-1"></div>
+									<a
+										href="#"
+										class="fw-bold text-start"
+										style="text-decoration: none"
+									>
+										<img
+											src="../assets/icons/satisfied.svg"
+											alt=""
+											style="width: 1rem; height: 1rem"
+										/>
+										<span style="vertical-align: middle; font-size: 12px"
+											>Hài lòng</span
+										>
+									</a>
+									&nbsp;&nbsp;
+									<a
+										href="#"
+										class="fw-bold text-start"
+										style="text-decoration: none"
+									>
+										<img
+											src="../assets/icons/not_satisfied.svg"
+											alt=""
+											style="width: 1rem; height: 1rem"
+										/>
+										<span style="vertical-align: middle; font-size: 12px"
+											>Chưa hài lòng</span
+										>
+									</a>
+								</div>
+								<!-- Admin -->
+							</div>
+
+							<!-- Question List -->
+						</div>
+						<!-- End Q&A -->
+					</div>
 				</div>
 			</div>
 		</section>
@@ -1100,8 +1258,8 @@
 		<!-- Start Select Category  -->
 		<section>
 			<div class="container pt-4">
-				<div class="row gx-2">
-					<div class="col">
+				<div class="row g-2">
+					<div class="col-lg-1over5 col-6">
 						<a
 							href="javascript:void(0)"
 							class="
@@ -1114,11 +1272,11 @@
 								nav-link
 							"
 						>
-							<div class="me-3"><img src="../assets/icons/salad.svg" alt="" /></div>
-							<span class="fw-bold" style="color: #646d84">Food Deli Pack</span>
+							<div class="me-3"><img src="../assets/icons/salad.svg" style="width: 1.5rem;" alt="" /></div>
+							<span class="fw-bold" style="color: #646d84; white-space: nowrap;">Food Deli Pack</span>
 						</a>
 					</div>
-					<div class="col">
+					<div class="col-lg-1over5 col-6">
 						<a
 							href="javascript:void(0)"
 							class="
@@ -1131,11 +1289,11 @@
 								nav-link
 							"
 						>
-							<div class="me-3"><img src="../assets/icons/boiled.svg" alt="" /></div>
-							<span class="fw-bold" style="color: #646d84">Food Deli Now</span>
+							<div class="me-3"><img src="../assets/icons/boiled.svg" style="width: 1.5rem;" alt="" /></div>
+							<span class="fw-bold" style="color: #646d84; white-space: nowrap;">Food Deli Now</span>
 						</a>
 					</div>
-					<div class="col">
+					<div class="col-lg-1over5 col-6">
 						<a
 							href="javascript:void(0)"
 							class="
@@ -1148,13 +1306,11 @@
 								nav-link
 							"
 						>
-							<div class="me-3">
-								<img src="../assets/icons/fast-food.svg" alt="" />
-							</div>
-							<span class="fw-bold" style="color: #646d84">Food Deli Combo</span>
+							<div class="me-3"><img src="../assets/icons/fast-food.svg" style="width: 1.5rem;" alt="" /></div>
+							<span class="fw-bold" style="color: #646d84; white-space: nowrap;">Food Deli Combo</span>
 						</a>
 					</div>
-					<div class="col">
+					<div class="col-lg-1over5 col-6">
 						<a
 							href="javascript:void(0)"
 							class="
@@ -1167,11 +1323,11 @@
 								nav-link
 							"
 						>
-							<div class="me-3"><img src="../assets/icons/cooking.svg" alt="" /></div>
-							<span class="fw-bold" style="color: #646d84">Food Deli Set</span>
+							<div class="me-3"><img src="../assets/icons/cooking.svg" style="width: 1.5rem;" alt="" /></div>
+							<span class="fw-bold" style="color: #646d84; white-space: nowrap;">Food Deli Set</span>
 						</a>
 					</div>
-					<div class="col">
+					<div class="col-lg-1over5 col-6">
 						<a
 							href="javascript:void(0)"
 							class="
@@ -1184,16 +1340,14 @@
 								nav-link
 							"
 						>
-							<div class="me-3">
-								<img src="../assets/icons/grain-sack.svg" alt="" />
-							</div>
-							<span class="fw-bold" style="color: #646d84">Food Deli Store</span>
+							<div class="me-3"><img src="../assets/icons/grain-sack.svg" style="width: 1.5rem;" alt="" /></div>
+							<span class="fw-bold" style="color: #646d84; white-space: nowrap;">Food Deli Store</span>
 						</a>
 					</div>
 				</div>
 
-				<div class="row gx-3 pt-3 align-items-center justify-content-center">
-					<div class="col">
+				<div class="row g-2 flex-wrap pt-3 align-items-center justify-content-start">
+					<div class="col col-lg-1over10 col-3">
 						<a
 							href="javascript:void(0)"
 							class="
@@ -1203,7 +1357,6 @@
 								rounded-pill
 								px-2
 								text-center
-								m-auto
 								pro_category pro_category_active
 							"
 						>
@@ -1211,82 +1364,82 @@
 							<span class="fw-bold" style="font-size: 0.8rem">Tất cả</span>
 						</a>
 					</div>
-					<div class="col">
+					<div class="col col-lg-1over10 col-3">
 						<a
 							href="javascript:void(0)"
-							class="nav-link rounded-pill px-2 text-center m-auto pro_category"
+							class="nav-link rounded-pill px-2 text-center pro_category"
 						>
 							<img src="../assets/icons/heart.svg" width="25px" alt="" />
 							<span class="fw-bold" style="font-size: 0.8rem">&nbsp;Thịt</span>
 						</a>
 					</div>
-					<div class="col">
+					<div class="col col-lg-1over10 col-3">
 						<a
 							href="javascript:void(0)"
-							class="nav-link rounded-pill px-2 text-center m-auto pro_category"
+							class="nav-link rounded-pill px-2 text-center pro_category"
 						>
 							<img src="../assets/icons/heart.svg" width="25px" alt="" />
 							<span class="fw-bold" style="font-size: 0.8rem">&nbsp;Thịt</span>
 						</a>
 					</div>
-					<div class="col">
+					<div class="col col-lg-1over10 col-3">
 						<a
 							href="javascript:void(0)"
-							class="nav-link rounded-pill px-2 text-center m-auto pro_category"
+							class="nav-link rounded-pill px-2 text-center pro_category"
 						>
 							<img src="../assets/icons/heart.svg" width="25px" alt="" />
 							<span class="fw-bold" style="font-size: 0.8rem">&nbsp;Thịt</span>
 						</a>
 					</div>
-					<div class="col">
+					<div class="col col-lg-1over10 col-3">
 						<a
 							href="javascript:void(0)"
-							class="nav-link rounded-pill px-2 text-center m-auto pro_category"
+							class="nav-link rounded-pill px-2 text-center pro_category"
 						>
 							<img src="../assets/icons/heart.svg" width="25px" alt="" />
 							<span class="fw-bold" style="font-size: 0.8rem">&nbsp;Thịt</span>
 						</a>
 					</div>
-					<div class="col">
+					<div class="col col-lg-1over10 col-3">
 						<a
 							href="javascript:void(0)"
-							class="nav-link rounded-pill px-2 text-center m-auto pro_category"
+							class="nav-link rounded-pill px-2 text-center pro_category"
 						>
 							<img src="../assets/icons/heart.svg" width="25px" alt="" />
 							<span class="fw-bold" style="font-size: 0.8rem">&nbsp;Thịt</span>
 						</a>
 					</div>
-					<div class="col">
+					<div class="col col-lg-1over10 col-3">
 						<a
 							href="javascript:void(0)"
-							class="nav-link rounded-pill px-2 text-center m-auto pro_category"
+							class="nav-link rounded-pill px-2 text-center pro_category"
 						>
 							<img src="../assets/icons/heart.svg" width="25px" alt="" />
 							<span class="fw-bold" style="font-size: 0.8rem">&nbsp;Thịt</span>
 						</a>
 					</div>
-					<div class="col">
+					<div class="col col-lg-1over10 col-3">
 						<a
 							href="javascript:void(0)"
-							class="nav-link rounded-pill px-2 text-center m-auto pro_category"
+							class="nav-link rounded-pill px-2 text-center pro_category"
 						>
 							<img src="../assets/icons/heart.svg" width="25px" alt="" />
 							<span class="fw-bold" style="font-size: 0.8rem">&nbsp;Thịt</span>
 						</a>
 					</div>
-					<div class="col">
+					<div class="col col-lg-1over10 col-3">
 						<a
 							href="javascript:void(0)"
-							class="nav-link rounded-pill px-2 text-center m-auto pro_category"
+							class="nav-link rounded-pill px-2 text-center pro_category"
 						>
 							<img src="../assets/icons/heart.svg" width="25px" alt="" />
 							<span class="fw-bold" style="font-size: 0.8rem">&nbsp;Thịt</span>
 						</a>
 					</div>
-					<div class="col">
+					<div class="col col-lg-1over10 col-3">
 						<a
 							href="javascript:void(0)"
-							class="nav-link rounded-pill px-2 text-center m-auto pro_category"
+							class="nav-link rounded-pill px-2 text-center pro_category"
 						>
 							<img src="../assets/icons/heart.svg" width="25px" alt="" />
 							<span class="fw-bold" style="font-size: 0.8rem">&nbsp;Thịt</span>
@@ -1300,16 +1453,16 @@
 		<!-- Start Polular Products -->
 		<section class="mt-4">
 			<div class="container pt-4">
-				<div class="d-flex justify-content-between align-items-center">
-					<h4 class="fw-bold mb-0">Sản phẩm cùng chuyên mục</h4>
+				<div class="row align-items-start align-items-md-center justify-content-md-center">
+					<h4 class="col-8 fw-bold mb-0">Sản phẩm cùng chuyên mục</h4>
 
-					<a href="#" class="nav-link pe-0"
+					<a href="#" class="col-4 text-end nav-link p-0 pe-md-2"
 						>Xem tất cả &nbsp;<img src="../assets/icons/arrow-right-success.svg" alt=""
 					/></a>
 				</div>
 
 				<!-- List Product -->
-				<div class="row g-3 pt-4">
+				<div class="row g-3 pt-4 ">
 					<div class="col-md-3">
 						<div class="h-100 w-100 shadow p-3 bg-white rounded product">
 							<!-- sale -->
@@ -1350,17 +1503,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-success m-0">Combo</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -1404,17 +1557,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-danger m-0">Now</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -1458,17 +1611,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-warning m-0">Store</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -1512,17 +1665,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-success m-0">Set</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -1566,17 +1719,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-success m-0">Combo</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -1620,17 +1773,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-danger m-0">Now</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -1674,17 +1827,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-success m-0">Pack</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -1728,17 +1881,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-warning m-0">Store</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -1758,7 +1911,7 @@
 				);
 			"
 		>
-			<div class="container d-flex justify-content-around align-items-center">
+			<div class="container d-flex justify-content-around align-items-center py-3 py-lg-0">
 				<div>
 					<h3 class="fs-1 fw-bold text-success">Đặt hàng online dễ dàng!</h3>
 					<h5 class="fs-4 text-secondary">Tải ngay app Food Deli!</h5>
@@ -1772,7 +1925,7 @@
 						</a>
 					</div>
 				</div>
-				<div>
+				<div class="h-100">
 					<img src="../assets/images/order_online.png" class="w-100 h-100" alt="" />
 				</div>
 			</div>
@@ -1780,13 +1933,23 @@
 		<!-- End Order Online -->
 
 		<!-- Start Footer section -->
-		<section class="pt-2">
-			<div class="container mt-4">
+		<section class="pt-4">
+			<div class="container">
 				<!-- Row 1: Contacts -->
-				<div class="row justify-content-between align-items-center my-3">
-					<div class="col-md-10">
-						<div class="row gx-5 align-items-center">
-							<div class="col-md-3 d-flex align-items-start">
+				<div
+					class="
+						row
+						g-3
+						justify-content-between
+						align-items-center
+						border-bottom
+						pb-3
+						mt-3
+					"
+				>
+					<div class="col-lg-10 col-12 py-2">
+						<div class="row g-3 align-items-center">
+							<div class="col-md-3 col-12 d-flex align-items-start">
 								<div class="me-2">
 									<img src="../assets/icons/phone.svg" alt="" />
 								</div>
@@ -1798,7 +1961,7 @@
 								</div>
 							</div>
 
-							<div class="col-md-3 d-flex align-items-start">
+							<div class="col-md-3 col-12 d-flex align-items-start">
 								<div class="me-2">
 									<img src="../assets/icons/help.svg" alt="" />
 								</div>
@@ -1810,7 +1973,7 @@
 								</div>
 							</div>
 
-							<div class="col-md-3 d-flex align-items-start">
+							<div class="col-md-3 col-12 d-flex align-items-start">
 								<div class="me-2">
 									<img src="../assets/icons/mail.svg" alt="" />
 								</div>
@@ -1825,8 +1988,8 @@
 					</div>
 
 					<!-- Payment section -->
-					<div class="col-md-2">
-						<div class="d-flex justify-content-between align-items-center">
+					<div class="col-lg-2 col-12">
+						<div class="d-flex align-items-center">
 							<a
 								href="javascript:void(0)"
 								class="
@@ -1837,6 +2000,7 @@
 									d-flex
 									justify-content-center
 									align-items-center
+									me-3
 								"
 								style="width: 34px; height: 24px"
 							>
@@ -1856,6 +2020,7 @@
 									d-flex
 									justify-content-center
 									align-items-center
+									me-3
 								"
 								style="width: 34px; height: 24px"
 							>
@@ -1875,6 +2040,7 @@
 									d-flex
 									justify-content-center
 									align-items-center
+									me-3
 								"
 								style="width: 34px; height: 24px"
 							>
@@ -1894,6 +2060,7 @@
 									d-flex
 									justify-content-center
 									align-items-center
+									me-3
 								"
 								style="width: 34px; height: 24px"
 							>
@@ -1908,24 +2075,24 @@
 				</div>
 
 				<!-- Row 2: Navigatiors -->
-				<div class="row border-top py-3">
-					<div class="col-md-4">
+				<div class="row g-3 py-3">
+					<div class="col-lg-4 col-12">
 						<div>
-							<img src="../assets/images/logo-round.png" alt="" />
+							<img src="../assets/images/logo-round.png" alt="Logo Food Deli" />
 						</div>
 
 						<div class="d-flex align-items-center mt-3">
-							<a href="#" class="btn btn-sm">
-								<img src="../assets/icons/app_store.svg" alt="" />
+							<a href="#" class="btn btn-sm ps-0">
+								<img src="../assets/icons/app_store.svg" alt="AppStore" />
 							</a>
 							<a href="#" class="btn btn-sm">
-								<img src="../assets/icons/google_play.svg" alt="" />
+								<img src="../assets/icons/google_play.svg" alt="GooglePlay" />
 							</a>
 						</div>
 					</div>
-					<div class="col-md-8">
-						<div class="row gx-2">
-							<div class="col-md-3">
+					<div class="col-lg-8 col-12">
+						<div class="row g-3">
+							<div class="col-md-3 col-12">
 								<p class="fw-bold fs-6 mb-1">Về chúng tôi</p>
 								<ul class="nav flex-column">
 									<li class="nav-item">
@@ -1979,7 +2146,7 @@
 								</ul>
 							</div>
 
-							<div class="col-md-3">
+							<div class="col-md-3 col-12">
 								<p class="fw-bold fs-6 mb-1">Hướng dẫn</p>
 								<ul class="nav flex-column">
 									<li class="nav-item">
@@ -2069,7 +2236,7 @@
 								</ul>
 							</div>
 
-							<div class="col-md-3">
+							<div class="col-md-3 col-12">
 								<p class="fw-bold fs-6 mb-1">Menu</p>
 								<ul class="nav flex-column">
 									<li class="nav-item">
@@ -2135,7 +2302,7 @@
 								</ul>
 							</div>
 
-							<div class="col-md-3">
+							<div class="col-md-3 col-12">
 								<p class="fw-bold fs-6 mb-1">Sản phẩm</p>
 								<ul class="nav flex-column">
 									<li class="nav-item">
@@ -2205,13 +2372,11 @@
 				</div>
 
 				<!-- Row 3: Company info -->
-				<div class="row border-top py-3">
-					<p class="m-0" style="font-size: 0.75rem">
-						© 2021 Công ty TNHH Tập đoàn Cổng Mặt Trời / Địa chỉ: Tầng 2, NV 5.10 KĐT
-						Viglacera, Hữu Hưng, Đại Mỗ, Hà Nội / Mã số thuế: 0109517477 / Điện thoại:
-						0976 212 555
-					</p>
-				</div>
+				<p class="mb-0 border-top py-3" style="font-size: 0.75rem">
+					© 2021 Công ty TNHH Tập đoàn Cổng Mặt Trời / Địa chỉ: Tầng 2, NV 5.10 KĐT
+					Viglacera, Hữu Hưng, Đại Mỗ, Hà Nội / Mã số thuế: 0109517477 / Điện thoại: 0976
+					212 555
+				</p>
 			</div>
 		</section>
 		<!-- End Footer section -->
