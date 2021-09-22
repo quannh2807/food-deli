@@ -9,6 +9,10 @@ img {
 	max-height: 100%;
 }
 
+.icon:hover {
+	transform: scale(1.1);
+}
+
 dropdown-toggle::after {
 	background-image: url('../icons/down.svg');
 }
@@ -31,15 +35,14 @@ dropdown-toggle::after {
 	font-weight: 600;
 }
 
+/* Banner */
 .banner-section {
-	background: lightblue url('../images/banner_image.png') repeat-x scroll center;
 	background-size: cover;
-	height: 480px;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 }
-.banner-card-position {
-	width: 25rem;
-	top: 12rem;
-	right: 0;
+.banner-card {
+	max-width: 400px;
 }
 .banner-card-brand-name {
 	color: #05a85e;
@@ -50,6 +53,8 @@ dropdown-toggle::after {
 	font-weight: 600;
 	font-size: 1.5rem;
 }
+
+/* Banner */
 
 .menu-section {
 	background: linear-gradient(#05a85e, #b9eed6);
@@ -122,9 +127,17 @@ dropdown-toggle::after {
 }
 /* End Carousel */
 
+@media only screen and (min-width: 768px) {
+	.banner-section {
+		height: 480px;
+		margin-bottom: 4rem;
+	}
 
-@media (max-width:300px) {
-	.input-search::placeholder {
-		color: transparent;
+	.banner-card {
+		position: absolute;
+		width: 25rem;
+		margin: 8rem;
+		top: 50%;
+		right: 0;
 	}
 }

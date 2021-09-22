@@ -23,13 +23,21 @@
 		<header class="border-top border-success border-4">
 			<!-- Top bar -->
 			<div class="container border-bottom">
-				<nav class="navbar justify-content-between align-items-center">
+				<nav class="navbar justify-content-between align-items-center mx-2 mx-md-0">
 					<a href="#" class="nav-link p-0 col-lg-6 col-12">
 						<img src="./assets/icons/back.svg" alt="" />
 						&nbsp;<span>Quay lại trang chủ food.com.vn</span>
 					</a>
 
-					<ul class="navbar-nav flex-row justify-content-start justify-content-lg-end col-lg-6 col-12 d-md-flex d-none">
+					<ul
+						class="
+							navbar-nav
+							flex-row
+							justify-content-start justify-content-lg-end
+							col-lg-6 col-12
+							d-md-flex d-none
+						"
+					>
 						<li class="nav-item me-3">
 							<a class="nav-link d-flex align-items-center" href="#">
 								<img src="./assets/icons/doc.svg" alt="" />&nbsp;&nbsp;Giới thiệu
@@ -53,15 +61,19 @@
 			<!-- Top bar -->
 
 			<!-- Start Navbar -->
-			<nav class="navbar navbar-expand-lg py-3">
-				<div class="container">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg py-3 mx-2 mx-md-0">
 					<div class="col-1">
 						<a class="navbar-brand" href="./index.html">
-							<img src="./assets/images/food-deli-logo.png" alt="Food deli logo" />
+							<img
+								src="./assets/images/food-deli-logo.png"
+								alt="Food deli logo"
+								style="min-width: 3rem"
+							/>
 						</a>
 					</div>
 					<button
-						class="btn btn-sm navbar-toggler"
+						class="btn btn-sm navbar-toggler pall-0"
 						id="menu"
 						type="button"
 						data-bs-toggle="collapse"
@@ -91,7 +103,7 @@
 												"
 												data-bs-toggle="dropdown"
 												aria-expanded="false"
-												style="font-weight: 600;"
+												style="font-weight: 600"
 											>
 												<img src="./assets/icons/bag2.svg" alt="" />&nbsp;
 												Sản phẩm
@@ -111,7 +123,13 @@
 
 										<div class="flex-grow-1" style="position: relative">
 											<input
-												class="form-control rounded-pill py-2 px-3 input-search"
+												class="
+													form-control
+													rounded-pill
+													py-2
+													px-3
+													input-search
+												"
 												type="search"
 												placeholder="Tìm kiếm sản phẩm"
 												aria-label="Search"
@@ -144,7 +162,7 @@
 									mt-3 mt-lg-0
 								"
 							>
-								<li class="nav-item me-4">
+								<li class="nav-item me-3">
 									<a
 										class="btn btn-sm border rounded-5 py-2 position-relative"
 										style="border-radius: 8px"
@@ -175,7 +193,7 @@
 										</span>
 									</a>
 								</li>
-								<li class="nav-item me-1">
+								<li class="nav-item me-3">
 									<a
 										class="btn btn-sm border rounded-5 py-2 position-relative"
 										style="border-radius: 8px"
@@ -221,16 +239,21 @@
 							</ul>
 						</div>
 					</div>
-				</div>
-			</nav>
+				</nav>
+			</div>
 			<!-- End Navbar -->
 		</header>
 		<!-- End Header -->
 
 		<!-- Start Banner -->
-		<section class="banner-section" style="margin-bottom: 4rem">
+		<section
+			class="banner-section"
+			style="
+				background: lightblue url('./assets/images/banner_image.png') repeat-x scroll center;
+			"
+		>
 			<div class="container position-relative">
-				<div class="card rounded-3 position-absolute banner-card-position">
+				<div class="card rounded-3 mx-auto banner-card">
 					<div class="card-body pt-3">
 						<div class="text-end">
 							<p class="mb-0 banner-card-brand-sub-name">
@@ -313,8 +336,8 @@
 		<section class="menu-section">
 			<div class="container py-4">
 				<!-- Row 1  -->
-				<div class="row gx-4">
-					<div class="col-md-7">
+				<div class="row g-3 mx-2 mx-md-0">
+					<div class="col-lg-7 col-12">
 						<div
 							class="menu-section-row-1-col-1 p-3 d-flex align-items-end"
 							style="background-image: url('./assets/images/combo_7_ngay.png')"
@@ -327,14 +350,14 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-5">
+					<div class="col-lg-5 col-12">
 						<div
 							class="
 								menu-section-row-1-col-2
 								p-3
 								d-flex
 								flex-column
-								justify-content-lg-between
+								justify-content-between
 							"
 							style="
 								background: #fff url('./assets/images/ga_chay_bo.png') no-repeat
@@ -351,7 +374,7 @@
 									<p class="fs-6 mb-0">Food Deli Pack</p>
 								</div>
 								<!-- icon add -->
-								<div class="">
+								<div class="icon">
 									<a href="#" class="d-inline-block p-2"
 										><img
 											src="./assets/icons/add_circle.svg"
@@ -365,17 +388,17 @@
 				</div>
 
 				<!-- Row 2 -->
-				<div class="row pt-4 gx-4">
-					<div class="col-md-6">
-						<div class="row gx-4">
-							<div class="col-6">
+				<div class="row pt-3 g-3 mx-2 mx-md-0">
+					<div class="col-lg-6 col-12">
+						<div class="row g-3 gy-lg-0">
+							<div class="col-md-6 col-12">
 								<div
 									class="
 										menu-section-row-1-col-2
 										p-3
 										d-flex
 										flex-column
-										justify-content-lg-between
+										justify-content-between
 									"
 									style="
 										background: #fff url('./assets/images/ca_kho_to.png')
@@ -401,7 +424,7 @@
 											<p class="fs-6 mb-0">Food Deli Pack</p>
 										</div>
 										<!-- icon add -->
-										<div class="">
+										<div class="icon">
 											<a href="#" class="d-inline-block p-2"
 												><img
 													src="./assets/icons/add_circle.svg"
@@ -412,14 +435,14 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-6">
+							<div class="col-md-6 col-12">
 								<div
 									class="
 										menu-section-row-1-col-2
 										p-3
 										d-flex
 										flex-column
-										justify-content-lg-between
+										justify-content-between
 									"
 									style="
 										background: #fff url('./assets/images/lau_bo_thap_cam.png')
@@ -447,7 +470,7 @@
 											<p class="fs-6 mb-0">Food Deli Pack</p>
 										</div>
 										<!-- icon add -->
-										<div class="">
+										<div class="icon">
 											<a href="#" class="d-inline-block p-2"
 												><img
 													src="./assets/icons/add_circle.svg"
@@ -460,14 +483,14 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6">
+					<div class="col-lg-6 col-12">
 						<div
 							class="
 								menu-section-row-1-col-2
 								p-3
 								d-flex
 								flex-column
-								justify-content-lg-between
+								justify-content-between
 							"
 							style="
 								background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.5)),
@@ -490,42 +513,63 @@
 		<!-- End menu section -->
 
 		<!-- Start Popular Section -->
-		<section class="pt-4">
+		<section class="pt-5">
 			<div class="container">
 				<h4 class="text-center fw-bold">Sản phẩm nổi bật</h4>
 
 				<!-- Product category -->
-				<div class="d-flex pt-3 align-items-center justify-content-center">
+				<div class="d-flex flex-wrap pt-3 align-items-center justify-content-center">
 					<a
 						href="javascript:void(0)"
-						class="nav-link rounded-pill me-2 pro_category pro_category_active"
+						class="nav-link rounded-pill m-2 pro_category pro_category_active"
+						style="white-space: nowrap"
 					>
 						<span class="fw-bold">Tất cả</span>
 					</a>
-					<a href="javascript:void(0)" class="nav-link rounded-pill me-2 pro_category">
-						<img src="./assets/icons/combo.svg" width="25px" alt="" />
+					<a
+						href="javascript:void(0)"
+						class="nav-link rounded-pill m-2 pro_category"
+						style="white-space: nowrap"
+					>
+						<img src="./assets/icons/combo.svg" style="width: 1.5rem" alt="" />
 						<span class="fw-bold">&nbsp;Combo</span>
 					</a>
-					<a href="javascript:void(0)" class="nav-link rounded-pill me-2 pro_category">
-						<img src="./assets/icons/pack.svg" width="25px" alt="" />
+					<a
+						href="javascript:void(0)"
+						class="nav-link rounded-pill m-2 pro_category"
+						style="white-space: nowrap"
+					>
+						<img src="./assets/icons/pack.svg" style="width: 1.5rem" alt="" />
 						<span class="fw-bold">&nbsp;Pack</span>
 					</a>
-					<a href="javascript:void(0)" class="nav-link rounded-pill me-2 pro_category">
-						<img src="./assets/icons/now.svg" width="25px" alt="" />
+					<a
+						href="javascript:void(0)"
+						class="nav-link rounded-pill m-2 pro_category"
+						style="white-space: nowrap"
+					>
+						<img src="./assets/icons/now.svg" style="width: 1.5rem" alt="" />
 						<span class="fw-bold">&nbsp;Now</span>
 					</a>
-					<a href="javascript:void(0)" class="nav-link rounded-pill me-2 pro_category">
-						<img src="./assets/icons/store_2.svg" width="25px" alt="" />
+					<a
+						href="javascript:void(0)"
+						class="nav-link rounded-pill m-2 pro_category"
+						style="white-space: nowrap"
+					>
+						<img src="./assets/icons/store_2.svg" style="width: 1.5rem" alt="" />
 						<span class="fw-bold">&nbsp;Store</span>
 					</a>
-					<a href="javascript:void(0)" class="nav-link rounded-pill me-2 pro_category">
-						<img src="./assets/icons/set.svg" width="25px" alt="" />
+					<a
+						href="javascript:void(0)"
+						class="nav-link rounded-pill m-2 pro_category"
+						style="white-space: nowrap"
+					>
+						<img src="./assets/icons/set.svg" style="width: 1.5rem" alt="" />
 						<span class="fw-bold">&nbsp;Set</span>
 					</a>
 				</div>
 
 				<!-- List Product -->
-				<div class="row g-3 pt-4">
+				<div class="row g-3 pt-4 mx-2 mx-md-0">
 					<div class="col-md-3">
 						<div class="h-100 w-100 shadow p-3 bg-white rounded product">
 							<!-- sale -->
@@ -566,17 +610,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./pages/product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-success m-0">Combo</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -620,17 +664,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./pages/product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-danger m-0">Now</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -674,17 +718,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./pages/product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-warning m-0">Store</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -728,17 +772,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./pages/product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-success m-0">Set</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -782,17 +826,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./pages/product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-success m-0">Combo</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -836,17 +880,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./pages/product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-danger m-0">Now</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -890,17 +934,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./pages/product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-success m-0">Pack</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -944,26 +988,26 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./pages/product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-warning m-0">Store</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="pt-5 text-center">
+				<div class="pt-4 text-center">
 					<a
 						class="btn btn-sm fw-bold rounded-pill px-3 py-2 text-success btn-get-all"
-						href="#"
+						href="./pages/list_product.html"
 					>
 						Xem tất cả
 					</a>
@@ -975,8 +1019,8 @@
 		<!-- Start Gift card & Subcriber Section -->
 		<section class="pt-5">
 			<div class="container">
-				<div class="row gx-4">
-					<div class="col-md-7">
+				<div class="row g-4 mx-2 mx-md-0">
+					<div class="col-lg-7 col-12">
 						<div
 							class="p-3 text-end"
 							style="
@@ -997,7 +1041,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-md-5">
+					<div class="col-lg-5 col-12">
 						<div
 							class="p-3 text-start"
 							style="
@@ -1010,7 +1054,7 @@
 							<h5 class="text-white fs-5">Nhận khuyến mãi hàng tuần</h5>
 
 							<form class="d-flex align-items-center justify-content-between mt-4">
-								<div class="form-group flex-grow-1 me-4">
+								<div class="form-group flex-grow-1 me-lg-4 me-1">
 									<input
 										type="text"
 										class="form-control rounded-pill px-3"
@@ -1029,10 +1073,10 @@
 										py-2
 										text-white
 										border border-1 border-white
-										btn-subcriber
 									"
+									style="white-space: nowrap;"
 								>
-									Đăng ký &nbsp;
+									Đăng ký
 									<img src="./assets/icons/arrow-right.svg" alt="arrow right" />
 								</button>
 							</form>
@@ -1044,19 +1088,19 @@
 		<!-- End Gift card & Subcriber Section -->
 
 		<!-- Start News & Events section -->
-		<section class="pt-4">
+		<section class="pt-5">
 			<div class="container">
 				<h4 class="text-center fw-bold">Tin tức sự kiện</h4>
 
 				<!-- News & Events List -->
-				<div class="row g-3 pt-4">
+				<div class="row g-3 mt-0 mx-2 mx-md-0">
 					<div class="col-md-3 col-sm-6 col-12">
 						<div class="h-100 w-100 bg-white rounded">
 							<div>
 								<img src="./assets/images/news_1.png" class="w-100" alt="" />
 							</div>
 
-							<h6 class="fs-6 pt-1">
+							<h6 class="fs-6 pt-2">
 								Những loại thực phẩm nào người suy tim cần hạn chế tối đa?
 							</h6>
 							<p class="text-secondary text-uppercase m-0" style="font-size: 0.75rem">
@@ -1232,12 +1276,12 @@
 		<!-- End News & Events section -->
 
 		<!-- Start Q&A section -->
-		<section class="pt-4">
+		<section class="pt-5">
 			<div class="container mx-auto">
 				<h4 class="text-center fw-bold">Câu hỏi thường gặp</h4>
 
-				<div class="row gx-3 pt-4">
-					<div class="col-md-6 col-sm-12">
+				<div class="row g-3 pt-3 mx-2 mx-md-0">
+					<div class="col-md-6 col-12">
 						<div class="">
 							<img
 								src="./assets/images/female-courier-mask-blue-uniform-holding-cardboard-shopping-bag-multiple-boxes-while-asking-call.png"
@@ -1247,7 +1291,7 @@
 						</div>
 					</div>
 
-					<div class="col-md-6 col-sm-12">
+					<div class="col-md-6 col-12">
 						<div class="h-100 w-100">
 							<!-- Collapse 1 -->
 							<div class="mb-2">
@@ -1462,13 +1506,13 @@
 		<!-- End Q&A section -->
 
 		<!-- Start Footer section -->
-		<section class="pt-5">
-			<div class="container mt-4">
+		<section class="pt-4">
+			<div class="container">
 				<!-- Row 1: Contacts -->
-				<div class="row justify-content-between align-items-center my-3">
-					<div class="col-md-10">
-						<div class="row gx-5 align-items-center">
-							<div class="col-md-3 d-flex align-items-start">
+				<div class="row g-3 justify-content-between align-items-center border-bottom pb-3 mt-3 mx-2 mx-md-0">
+					<div class="col-lg-10 col-12">
+						<div class="row g-3 align-items-center">
+							<div class="col-md-3 col-12 d-flex align-items-start">
 								<div class="me-2">
 									<img src="./assets/icons/phone.svg" alt="" />
 								</div>
@@ -1480,7 +1524,7 @@
 								</div>
 							</div>
 
-							<div class="col-md-3 d-flex align-items-start">
+							<div class="col-md-3 col-12 d-flex align-items-start">
 								<div class="me-2"><img src="./assets/icons/help.svg" alt="" /></div>
 								<div class="">
 									<p class="m-0 text-secondary" style="font-size: 0.75rem">
@@ -1490,7 +1534,7 @@
 								</div>
 							</div>
 
-							<div class="col-md-3 d-flex align-items-start">
+							<div class="col-md-3 col-12 d-flex align-items-start">
 								<div class="me-2"><img src="./assets/icons/mail.svg" alt="" /></div>
 								<div class="">
 									<p class="m-0 text-secondary" style="font-size: 0.75rem">
@@ -1503,8 +1547,8 @@
 					</div>
 
 					<!-- Payment section -->
-					<div class="col-md-2">
-						<div class="d-flex justify-content-between align-items-center">
+					<div class="col-lg-2 col-12">
+						<div class="d-flex align-items-center">
 							<a
 								href="javascript:void(0)"
 								class="
@@ -1515,6 +1559,7 @@
 									d-flex
 									justify-content-center
 									align-items-center
+									me-3
 								"
 								style="width: 34px; height: 24px"
 							>
@@ -1534,6 +1579,7 @@
 									d-flex
 									justify-content-center
 									align-items-center
+									me-3
 								"
 								style="width: 34px; height: 24px"
 							>
@@ -1553,6 +1599,7 @@
 									d-flex
 									justify-content-center
 									align-items-center
+									me-3
 								"
 								style="width: 34px; height: 24px"
 							>
@@ -1572,6 +1619,7 @@
 									d-flex
 									justify-content-center
 									align-items-center
+									me-3
 								"
 								style="width: 34px; height: 24px"
 							>
@@ -1586,14 +1634,14 @@
 				</div>
 
 				<!-- Row 2: Navigatiors -->
-				<div class="row border-top py-3">
-					<div class="col-md-4">
+				<div class="row g-3 py-3 mx-2 mx-md-0">
+					<div class="col-lg-4 col-12">
 						<div>
 							<img src="./assets/images/logo-round.png" alt="" />
 						</div>
 
 						<div class="d-flex align-items-center mt-3">
-							<a href="#" class="btn btn-sm">
+							<a href="#" class="btn btn-sm ps-0">
 								<img src="./assets/icons/app_store.svg" alt="" />
 							</a>
 							<a href="#" class="btn btn-sm">
@@ -1601,9 +1649,9 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-md-8">
-						<div class="row gx-2">
-							<div class="col-md-3">
+					<div class="col-lg-8 col-12">
+						<div class="row g-3">
+							<div class="col-md-3 col-12">
 								<p class="fw-bold fs-6 mb-1">Về chúng tôi</p>
 								<ul class="nav flex-column">
 									<li class="nav-item">
@@ -1657,7 +1705,7 @@
 								</ul>
 							</div>
 
-							<div class="col-md-3">
+							<div class="col-md-3 col-12">
 								<p class="fw-bold fs-6 mb-1">Hướng dẫn</p>
 								<ul class="nav flex-column">
 									<li class="nav-item">
@@ -1747,7 +1795,7 @@
 								</ul>
 							</div>
 
-							<div class="col-md-3">
+							<div class="col-md-3 col-12">
 								<p class="fw-bold fs-6 mb-1">Menu</p>
 								<ul class="nav flex-column">
 									<li class="nav-item">
@@ -1813,7 +1861,7 @@
 								</ul>
 							</div>
 
-							<div class="col-md-3">
+							<div class="col-md-3 col-12">
 								<p class="fw-bold fs-6 mb-1">Sản phẩm</p>
 								<ul class="nav flex-column">
 									<li class="nav-item">
@@ -1883,13 +1931,11 @@
 				</div>
 
 				<!-- Row 3: Company info -->
-				<div class="row border-top py-3">
-					<p class="m-0" style="font-size: 0.75rem">
-						© 2021 Công ty TNHH Tập đoàn Cổng Mặt Trời / Địa chỉ: Tầng 2, NV 5.10 KĐT
-						Viglacera, Hữu Hưng, Đại Mỗ, Hà Nội / Mã số thuế: 0109517477 / Điện thoại:
-						0976 212 555
-					</p>
-				</div>
+				<p class="mb-0 mx-2 mx-md-0 border-top py-3" style="font-size: 0.75rem">
+					© 2021 Công ty TNHH Tập đoàn Cổng Mặt Trời / Địa chỉ: Tầng 2, NV 5.10 KĐT
+					Viglacera, Hữu Hưng, Đại Mỗ, Hà Nội / Mã số thuế: 0109517477 / Điện thoại: 0976
+					212 555
+				</p>
 			</div>
 		</section>
 		<!-- End Footer section -->
