@@ -19,19 +19,25 @@
 	</head>
 
 	<body>
-		<!-- Start Navbar -->
-		<nav class="border-top border-success border-4">
-			<div class="container px-0" style="border-bottom-color: #ecedf1">
-				<div class="d-flex align-items-center justify-content-between">
-					<div class="d-flex align-items-center">
-						<a href="#" class="nav-link p-0"
-							><img src="../assets/icons/back.svg" alt="" /> &nbsp;<span
-								>Quay lại trang chủ food.com.vn</span
-							>
-						</a>
-					</div>
+		<!-- Start Header -->
+		<header class="border-top border-success border-4">
+			<!-- Top bar -->
+			<div class="container border-bottom">
+				<nav class="navbar justify-content-between align-items-center ">
+					<a href="#" class="nav-link p-0 col-lg-6 col-12">
+						<img src="../assets/icons/back.svg" alt="" />
+						&nbsp;<span>Quay lại trang chủ food.com.vn</span>
+					</a>
 
-					<ul class="navbar-nav flex-row">
+					<ul
+						class="
+							navbar-nav
+							flex-row
+							justify-content-start justify-content-lg-end
+							col-lg-6 col-12
+							d-md-flex d-none
+						"
+					>
 						<li class="nav-item me-3">
 							<a class="nav-link d-flex align-items-center" href="#">
 								<img src="../assets/icons/doc.svg" alt="" />&nbsp;&nbsp;Giới thiệu
@@ -39,125 +45,205 @@
 						</li>
 						<li class="nav-item me-3">
 							<a class="nav-link d-flex align-items-center" href="#">
-								<img src="../assets/icons/store.svg" alt="" />&nbsp;&nbsp;Food Deli Store</a
+								<img src="../assets/icons/store.svg" alt="" />&nbsp;&nbsp;Food Deli
+								Store</a
 							>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link d-flex align-items-center" href="#">
-								<img src="../assets/icons/bag.svg" alt="" />&nbsp;&nbsp;Bán hàng cùng Food
-								Deli</a
+								<img src="../assets/icons/bag.svg" alt="" />&nbsp;&nbsp;Bán hàng cùng
+								Food Deli</a
 							>
 						</li>
 					</ul>
-				</div>
+				</nav>
 			</div>
-			<div class="container px-0 border-top border-1">
-				<div class="row py-3">
-					<!-- Brand image -->
+			<!-- Top bar -->
+
+			<!-- Start Navbar -->
+			<div class="container">
+				<nav class="navbar navbar-expand-lg py-3 ">
 					<div class="col-1">
-						<a class="navbar-brand" href="#">
-							<img src="../assets/images/food-deli-logo.png" alt="Food deli logo" />
+						<a class="navbar-brand" href="../index.html">
+							<img
+								src="../assets/images/food-deli-logo.png"
+								alt="Food deli logo"
+								style="min-width: 3rem"
+							/>
 						</a>
 					</div>
+					<button
+						class="btn btn-sm navbar-toggler pall-0"
+						id="menu"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
 
-					<!-- Form search -->
-					<form class="col-8 my-auto">
-						<div class="d-flex justify-content-center align-items-center">
-							<div class="btn-group me-2">
-								<button
-									type="button"
-									class="btn btn-sm btn-success rounded-pill dropdown-toggle px-3"
-									data-bs-toggle="dropdown"
-									aria-expanded="false"
-								>
-									<img src="../assets/icons/bag2.svg" alt="" />&nbsp; Sản phẩm
-								</button>
-								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="#">Sản phẩm 2</a></li>
-									<li><a class="dropdown-item" href="#">Sản phẩm 3</a></li>
-									<li><a class="dropdown-item" href="#">Sản phẩm 4</a></li>
-								</ul>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<div class="row flex-lg-grow-1 mt-3 mt-lg-0">
+							<!-- Form search -->
+							<div class="col-lg-9 col-12 justify-content-end">
+								<form class="offset-lg-1 col-lg-9">
+									<div class="d-flex justify-content-center align-items-center">
+										<div class="dropdown me-3">
+											<button
+												type="button"
+												class="
+													btn btn-sm btn-success
+													rounded-pill
+													dropdown-toggle
+													px-3
+													py-2
+												"
+												data-bs-toggle="dropdown"
+												aria-expanded="false"
+												style="font-weight: 600"
+											>
+												<img src="../assets/icons/bag2.svg" alt="" />&nbsp;
+												Sản phẩm
+											</button>
+											<ul class="dropdown-menu">
+												<li>
+													<a class="dropdown-item" href="#">Sản phẩm 2</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="#">Sản phẩm 3</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="#">Sản phẩm 4</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="flex-grow-1" style="position: relative">
+											<input
+												class="
+													form-control
+													rounded-pill
+													py-2
+													px-3
+													input-search
+												"
+												type="search"
+												placeholder="Tìm kiếm sản phẩm"
+												aria-label="Search"
+											/>
+											<button
+												class="btn btn-sm"
+												type="submit"
+												style="
+													position: absolute;
+													top: 50%;
+													right: 5px;
+													margin-top: -1rem;
+												"
+											>
+												<img src="../assets/icons/search.svg" alt="" />
+											</button>
+										</div>
+									</div>
+								</form>
 							</div>
 
-							<div class="col-8" style="position: relative">
-								<input
-									class="form-control rounded-pill py-1 px-3"
-									type="search"
-									placeholder="Tìm kiếm sản phẩm"
-									aria-label="Search"
-									style="background-color: #e6e6e6"
-								/>
-								<!--   <img src="../assets/icons/search.svg" alt="" style="position: absolute;top:5px;right: 15px;"> -->
-							</div>
-						</div>
-					</form>
-
-					<!-- Cart section -->
-					<ul class="col-3 navbar-nav flex-row justify-content-end align-items-center">
-						<li class="nav-item me-3">
-							<a
-								class="btn btn-sm border rounded-5 position-relative"
-								aria-current="page"
-								href="#"
-							>
-								<img src="../assets/icons/heart.svg" alt="" />
-								<span
-									class="
-										position-absolute
-										top-0
-										start-100
-										translate-middle
-										badge
-										rounded-pill
-										bg-danger
-									"
-									style="font-size: 11px"
-								>
-									99
-								</span>
-							</a>
-						</li>
-						<li class="nav-item me-3">
-							<a
-								class="btn btn-sm border rounded-5 position-relative"
-								aria-current="page"
-								href="#"
-							>
-								<img src="../assets/icons/cart.svg" alt="" />
-								<span
-									class="
-										position-absolute
-										top-0
-										start-100
-										translate-middle
-										badge
-										rounded-pill
-										bg-danger
-									"
-									style="font-size: 11px"
-								>
-									99
-								</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a
+							<!-- Cart section -->
+							<ul
 								class="
-									btn btn-sm
-									border border-success
-									rounded-pill
-									px-3
-									text-success
+									col-lg-3 col-12
+									navbar-nav
+									flex-row
+									justify-content-end
+									align-items-center
+									mt-3 mt-lg-0
 								"
-								href="#"
-								>Đăng nhập</a
 							>
-						</li>
-					</ul>
-				</div>
+								<li class="nav-item me-3">
+									<a
+										class="btn btn-sm border rounded-5 py-2 position-relative"
+										style="border-radius: 8px"
+										aria-current="page"
+										href="#"
+									>
+										<img
+											src="../assets/icons/heart.svg"
+											style="min-width: 1rem"
+											alt=""
+										/>
+										<!-- <span class="d-lg-none" style="font-weight: 600;font-size: 14px;">
+											Sản phẩm yêu thích
+										</span> -->
+										<span
+											class="
+												position-absolute
+												top-0
+												start-100
+												translate-middle
+												badge
+												rounded-pill
+												bg-danger
+											"
+											style="font-size: 11px"
+										>
+											99
+										</span>
+									</a>
+								</li>
+								<li class="nav-item me-3">
+									<a
+										class="btn btn-sm border rounded-5 py-2 position-relative"
+										style="border-radius: 8px"
+										aria-current="page"
+										href="#"
+									>
+										<img
+											src="../assets/icons/cart.svg"
+											style="min-width: 1rem"
+											alt=""
+										/>
+										<span
+											class="
+												position-absolute
+												top-0
+												start-100
+												translate-middle
+												badge
+												rounded-pill
+												bg-danger
+											"
+											style="font-size: 11px"
+										>
+											99
+										</span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a
+										class="
+											btn btn-sm
+											border border-success
+											rounded-pill
+											px-3
+											py-2
+											text-success
+										"
+										href="#"
+										style="white-space: nowrap"
+										>Đăng nhập</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
 			</div>
-		</nav>
-		<!-- End Navbar -->
+			<!-- End Navbar -->
+		</header>
+		<!-- End Header -->
 
 		<!-- Start Carousel -->
 		<section class="mb-5">
@@ -313,8 +399,8 @@
 		<!-- Start Select Category  -->
 		<section>
 			<div class="container pt-4">
-				<div class="row gx-2">
-					<div class="col">
+				<div class="row g-2">
+					<div class="col-lg-1over5 col-6">
 						<a
 							href="javascript:void(0)"
 							class="
@@ -327,11 +413,11 @@
 								nav-link
 							"
 						>
-							<div class="me-3"><img src="../assets/icons/salad.svg" alt="" /></div>
-							<span class="fw-bold" style="color: #646d84">Food Deli Pack</span>
+							<div class="me-3"><img src="../assets/icons/salad.svg" style="width: 1.5rem;" alt="" /></div>
+							<span class="fw-bold" style="color: #646d84; white-space: nowrap;">Food Deli Pack</span>
 						</a>
 					</div>
-					<div class="col">
+					<div class="col-lg-1over5 col-6">
 						<a
 							href="javascript:void(0)"
 							class="
@@ -344,11 +430,11 @@
 								nav-link
 							"
 						>
-							<div class="me-3"><img src="../assets/icons/boiled.svg" alt="" /></div>
-							<span class="fw-bold" style="color: #646d84">Food Deli Now</span>
+							<div class="me-3"><img src="../assets/icons/boiled.svg" style="width: 1.5rem;" alt="" /></div>
+							<span class="fw-bold" style="color: #646d84; white-space: nowrap;">Food Deli Now</span>
 						</a>
 					</div>
-					<div class="col">
+					<div class="col-lg-1over5 col-6">
 						<a
 							href="javascript:void(0)"
 							class="
@@ -361,11 +447,11 @@
 								nav-link
 							"
 						>
-							<div class="me-3"><img src="../assets/icons/fast-food.svg" alt="" /></div>
-							<span class="fw-bold" style="color: #646d84">Food Deli Combo</span>
+							<div class="me-3"><img src="../assets/icons/fast-food.svg" style="width: 1.5rem;" alt="" /></div>
+							<span class="fw-bold" style="color: #646d84; white-space: nowrap;">Food Deli Combo</span>
 						</a>
 					</div>
-					<div class="col">
+					<div class="col-lg-1over5 col-6">
 						<a
 							href="javascript:void(0)"
 							class="
@@ -378,11 +464,11 @@
 								nav-link
 							"
 						>
-							<div class="me-3"><img src="../assets/icons/cooking.svg" alt="" /></div>
-							<span class="fw-bold" style="color: #646d84">Food Deli Set</span>
+							<div class="me-3"><img src="../assets/icons/cooking.svg" style="width: 1.5rem;" alt="" /></div>
+							<span class="fw-bold" style="color: #646d84; white-space: nowrap;">Food Deli Set</span>
 						</a>
 					</div>
-					<div class="col">
+					<div class="col-lg-1over5 col-6">
 						<a
 							href="javascript:void(0)"
 							class="
@@ -395,14 +481,14 @@
 								nav-link
 							"
 						>
-							<div class="me-3"><img src="../assets/icons/grain-sack.svg" alt="" /></div>
-							<span class="fw-bold" style="color: #646d84">Food Deli Store</span>
+							<div class="me-3"><img src="../assets/icons/grain-sack.svg" style="width: 1.5rem;" alt="" /></div>
+							<span class="fw-bold" style="color: #646d84; white-space: nowrap;">Food Deli Store</span>
 						</a>
 					</div>
 				</div>
 
-				<div class="row gx-3 pt-3 align-items-center justify-content-center">
-					<div class="col">
+				<div class="row g-2 flex-wrap pt-3 align-items-center justify-content-start">
+					<div class="col col-lg-1over10 col-3">
 						<a
 							href="javascript:void(0)"
 							class="
@@ -412,7 +498,6 @@
 								rounded-pill
 								px-2
 								text-center
-								m-auto
 								pro_category pro_category_active
 							"
 						>
@@ -420,82 +505,82 @@
 							<span class="fw-bold" style="font-size: 0.8rem">Tất cả</span>
 						</a>
 					</div>
-					<div class="col">
+					<div class="col col-lg-1over10 col-3">
 						<a
 							href="javascript:void(0)"
-							class="nav-link rounded-pill px-2 text-center m-auto pro_category"
+							class="nav-link rounded-pill px-2 text-center pro_category"
 						>
 							<img src="../assets/icons/heart.svg" width="25px" alt="" />
 							<span class="fw-bold" style="font-size: 0.8rem">&nbsp;Thịt</span>
 						</a>
 					</div>
-					<div class="col">
+					<div class="col col-lg-1over10 col-3">
 						<a
 							href="javascript:void(0)"
-							class="nav-link rounded-pill px-2 text-center m-auto pro_category"
+							class="nav-link rounded-pill px-2 text-center pro_category"
 						>
 							<img src="../assets/icons/heart.svg" width="25px" alt="" />
 							<span class="fw-bold" style="font-size: 0.8rem">&nbsp;Thịt</span>
 						</a>
 					</div>
-					<div class="col">
+					<div class="col col-lg-1over10 col-3">
 						<a
 							href="javascript:void(0)"
-							class="nav-link rounded-pill px-2 text-center m-auto pro_category"
+							class="nav-link rounded-pill px-2 text-center pro_category"
 						>
 							<img src="../assets/icons/heart.svg" width="25px" alt="" />
 							<span class="fw-bold" style="font-size: 0.8rem">&nbsp;Thịt</span>
 						</a>
 					</div>
-					<div class="col">
+					<div class="col col-lg-1over10 col-3">
 						<a
 							href="javascript:void(0)"
-							class="nav-link rounded-pill px-2 text-center m-auto pro_category"
+							class="nav-link rounded-pill px-2 text-center pro_category"
 						>
 							<img src="../assets/icons/heart.svg" width="25px" alt="" />
 							<span class="fw-bold" style="font-size: 0.8rem">&nbsp;Thịt</span>
 						</a>
 					</div>
-					<div class="col">
+					<div class="col col-lg-1over10 col-3">
 						<a
 							href="javascript:void(0)"
-							class="nav-link rounded-pill px-2 text-center m-auto pro_category"
+							class="nav-link rounded-pill px-2 text-center pro_category"
 						>
 							<img src="../assets/icons/heart.svg" width="25px" alt="" />
 							<span class="fw-bold" style="font-size: 0.8rem">&nbsp;Thịt</span>
 						</a>
 					</div>
-					<div class="col">
+					<div class="col col-lg-1over10 col-3">
 						<a
 							href="javascript:void(0)"
-							class="nav-link rounded-pill px-2 text-center m-auto pro_category"
+							class="nav-link rounded-pill px-2 text-center pro_category"
 						>
 							<img src="../assets/icons/heart.svg" width="25px" alt="" />
 							<span class="fw-bold" style="font-size: 0.8rem">&nbsp;Thịt</span>
 						</a>
 					</div>
-					<div class="col">
+					<div class="col col-lg-1over10 col-3">
 						<a
 							href="javascript:void(0)"
-							class="nav-link rounded-pill px-2 text-center m-auto pro_category"
+							class="nav-link rounded-pill px-2 text-center pro_category"
 						>
 							<img src="../assets/icons/heart.svg" width="25px" alt="" />
 							<span class="fw-bold" style="font-size: 0.8rem">&nbsp;Thịt</span>
 						</a>
 					</div>
-					<div class="col">
+					<div class="col col-lg-1over10 col-3">
 						<a
 							href="javascript:void(0)"
-							class="nav-link rounded-pill px-2 text-center m-auto pro_category"
+							class="nav-link rounded-pill px-2 text-center pro_category"
 						>
 							<img src="../assets/icons/heart.svg" width="25px" alt="" />
 							<span class="fw-bold" style="font-size: 0.8rem">&nbsp;Thịt</span>
 						</a>
 					</div>
-					<div class="col">
+					<div class="col col-lg-1over10 col-3">
 						<a
 							href="javascript:void(0)"
-							class="nav-link rounded-pill px-2 text-center m-auto pro_category"
+							class="nav-link rounded-pill px-2 text-center pro_category"
 						>
 							<img src="../assets/icons/heart.svg" width="25px" alt="" />
 							<span class="fw-bold" style="font-size: 0.8rem">&nbsp;Thịt</span>
@@ -518,7 +603,7 @@
 				</div>
 
 				<!-- List Product -->
-				<div class="row g-3 pt-4">
+				<div class="row g-3 pt-4 ">
 					<div class="col-md-3">
 						<div class="h-100 w-100 shadow p-3 bg-white rounded product">
 							<!-- sale -->
@@ -559,17 +644,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-success m-0">Combo</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -613,17 +698,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-danger m-0">Now</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -667,17 +752,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-warning m-0">Store</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -721,17 +806,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-success m-0">Set</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -775,17 +860,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-success m-0">Combo</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -829,17 +914,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-danger m-0">Now</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -883,17 +968,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-success m-0">Pack</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -937,17 +1022,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-warning m-0">Store</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -956,8 +1041,8 @@
 		</section>
 		<!-- Start Experiance -->
 		<div class="container pt-5">
-			<div class="row gx-4">
-				<div class="col-md-4 col-sm-12">
+			<div class="row g-3">
+				<div class="col-lg-4 col-sm-12">
 					<div
 						class="px-3 pt-md-5 py-4"
 						style="
@@ -979,7 +1064,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-md-4 col-sm-12">
+				<div class="col-lg-4 col-sm-12">
 					<div
 						class="px-3 pt-md-5 pb-4"
 						style="
@@ -1001,7 +1086,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-md-4 col-sm-12">
+				<div class="col-lg-4 col-sm-12">
 					<div
 						class="px-3 pt-md-5 pb-4"
 						style="
@@ -1040,7 +1125,7 @@
 				</div>
 
 				<!-- List Product -->
-				<div class="row g-3 pt-4">
+				<div class="row g-3 pt-4 ">
 					<div class="col-md-3">
 						<div class="h-100 w-100 shadow p-3 bg-white rounded product">
 							<!-- sale -->
@@ -1081,17 +1166,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-success m-0">Combo</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -1135,17 +1220,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-danger m-0">Now</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -1189,17 +1274,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-warning m-0">Store</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -1243,17 +1328,233 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="h-100 w-100 shadow p-3 bg-white rounded product">
+							<!-- sale -->
+							<p
+								class="
+									py-1
+									px-2
+									fw-bold
+									bg-success
+									d-inline-block
+									rounded-pill
+									text-white
+								"
+								style="font-size: 11px"
+							>
+								SALE
+							</p>
+							<!-- product image -->
+							<div class="text-center position-relative">
+								<img src="../assets/images/ca_kho_to.png" alt="" />
+
+								<!-- icon add to cart -->
+								<a
+									href="#"
+									class="
+										bg-white
+										rounded-circle
+										shadow
+										d-inline-block
+										p-1
+										position-absolute
+									"
+									style="cursor: pointer; right: 0; bottom: 0"
+								>
+									<img src="../assets/icons/fe_add-cart.svg" alt="" />
+								</a>
+							</div>
+							<!-- infomation -->
+							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
+							<div>
+								<p class="fw-bold mb-2">
+									350.000đ&nbsp;&nbsp;<span
+										class="text-decoration-line-through text-black-50"
+										style="font-size: 13px"
+										>375.000đ</span
+									>
 								</p>
-								<p class="text-success m-0">Set</p>
+								<a href="./product_details.html" class="nav-link p-0">
+									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="h-100 w-100 shadow p-3 bg-white rounded product">
+							<!-- sale -->
+							<p
+								class="
+									py-1
+									px-2
+									fw-bold
+									bg-success
+									d-inline-block
+									rounded-pill
+									text-white
+								"
+								style="font-size: 11px"
+							>
+								SALE
+							</p>
+							<!-- product image -->
+							<div class="text-center position-relative">
+								<img src="../assets/images/ca_kho_to.png" alt="" />
+
+								<!-- icon add to cart -->
+								<a
+									href="#"
+									class="
+										bg-white
+										rounded-circle
+										shadow
+										d-inline-block
+										p-1
+										position-absolute
+									"
+									style="cursor: pointer; right: 0; bottom: 0"
+								>
+									<img src="../assets/icons/fe_add-cart.svg" alt="" />
+								</a>
+							</div>
+							<!-- infomation -->
+							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
+							<div>
+								<p class="fw-bold mb-2">
+									350.000đ&nbsp;&nbsp;<span
+										class="text-decoration-line-through text-black-50"
+										style="font-size: 13px"
+										>375.000đ</span
+									>
+								</p>
+								<a href="./product_details.html" class="nav-link p-0">
+									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="h-100 w-100 shadow p-3 bg-white rounded product">
+							<!-- sale -->
+							<p
+								class="
+									py-1
+									px-2
+									fw-bold
+									bg-success
+									d-inline-block
+									rounded-pill
+									text-white
+								"
+								style="font-size: 11px"
+							>
+								SALE
+							</p>
+							<!-- product image -->
+							<div class="text-center position-relative">
+								<img src="../assets/images/ca_kho_to.png" alt="" />
+
+								<!-- icon add to cart -->
+								<a
+									href="#"
+									class="
+										bg-white
+										rounded-circle
+										shadow
+										d-inline-block
+										p-1
+										position-absolute
+									"
+									style="cursor: pointer; right: 0; bottom: 0"
+								>
+									<img src="../assets/icons/fe_add-cart.svg" alt="" />
+								</a>
+							</div>
+							<!-- infomation -->
+							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
+							<div>
+								<p class="fw-bold mb-2">
+									350.000đ&nbsp;&nbsp;<span
+										class="text-decoration-line-through text-black-50"
+										style="font-size: 13px"
+										>375.000đ</span
+									>
+								</p>
+								<a href="./product_details.html" class="nav-link p-0">
+									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="h-100 w-100 shadow p-3 bg-white rounded product">
+							<!-- sale -->
+							<p
+								class="
+									py-1
+									px-2
+									fw-bold
+									bg-success
+									d-inline-block
+									rounded-pill
+									text-white
+								"
+								style="font-size: 11px"
+							>
+								SALE
+							</p>
+							<!-- product image -->
+							<div class="text-center position-relative">
+								<img src="../assets/images/ca_kho_to.png" alt="" />
+
+								<!-- icon add to cart -->
+								<a
+									href="#"
+									class="
+										bg-white
+										rounded-circle
+										shadow
+										d-inline-block
+										p-1
+										position-absolute
+									"
+									style="cursor: pointer; right: 0; bottom: 0"
+								>
+									<img src="../assets/icons/fe_add-cart.svg" alt="" />
+								</a>
+							</div>
+							<!-- infomation -->
+							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
+							<div>
+								<p class="fw-bold mb-2">
+									350.000đ&nbsp;&nbsp;<span
+										class="text-decoration-line-through text-black-50"
+										style="font-size: 13px"
+										>375.000đ</span
+									>
+								</p>
+								<a href="./product_details.html" class="nav-link p-0">
+									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -1274,7 +1575,7 @@
 				</div>
 
 				<!-- List Product -->
-				<div class="row g-3 pt-4">
+				<div class="row g-3 pt-4 ">
 					<div class="col-md-3">
 						<div class="h-100 w-100 shadow p-3 bg-white rounded product">
 							<!-- sale -->
@@ -1315,17 +1616,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-success m-0">Combo</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -1369,17 +1670,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-danger m-0">Now</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -1423,17 +1724,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-success m-0">Pack</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -1477,17 +1778,233 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="h-100 w-100 shadow p-3 bg-white rounded product">
+							<!-- sale -->
+							<p
+								class="
+									py-1
+									px-2
+									fw-bold
+									bg-success
+									d-inline-block
+									rounded-pill
+									text-white
+								"
+								style="font-size: 11px"
+							>
+								SALE
+							</p>
+							<!-- product image -->
+							<div class="text-center position-relative">
+								<img src="../assets/images/ca_kho_to.png" alt="" />
+
+								<!-- icon add to cart -->
+								<a
+									href="#"
+									class="
+										bg-white
+										rounded-circle
+										shadow
+										d-inline-block
+										p-1
+										position-absolute
+									"
+									style="cursor: pointer; right: 0; bottom: 0"
+								>
+									<img src="../assets/icons/fe_add-cart.svg" alt="" />
+								</a>
+							</div>
+							<!-- infomation -->
+							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
+							<div>
+								<p class="fw-bold mb-2">
+									350.000đ&nbsp;&nbsp;<span
+										class="text-decoration-line-through text-black-50"
+										style="font-size: 13px"
+										>375.000đ</span
+									>
 								</p>
-								<p class="text-warning m-0">Store</p>
+								<a href="./product_details.html" class="nav-link p-0">
+									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="h-100 w-100 shadow p-3 bg-white rounded product">
+							<!-- sale -->
+							<p
+								class="
+									py-1
+									px-2
+									fw-bold
+									bg-success
+									d-inline-block
+									rounded-pill
+									text-white
+								"
+								style="font-size: 11px"
+							>
+								SALE
+							</p>
+							<!-- product image -->
+							<div class="text-center position-relative">
+								<img src="../assets/images/ca_kho_to.png" alt="" />
+
+								<!-- icon add to cart -->
+								<a
+									href="#"
+									class="
+										bg-white
+										rounded-circle
+										shadow
+										d-inline-block
+										p-1
+										position-absolute
+									"
+									style="cursor: pointer; right: 0; bottom: 0"
+								>
+									<img src="../assets/icons/fe_add-cart.svg" alt="" />
+								</a>
+							</div>
+							<!-- infomation -->
+							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
+							<div>
+								<p class="fw-bold mb-2">
+									350.000đ&nbsp;&nbsp;<span
+										class="text-decoration-line-through text-black-50"
+										style="font-size: 13px"
+										>375.000đ</span
+									>
+								</p>
+								<a href="./product_details.html" class="nav-link p-0">
+									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="h-100 w-100 shadow p-3 bg-white rounded product">
+							<!-- sale -->
+							<p
+								class="
+									py-1
+									px-2
+									fw-bold
+									bg-success
+									d-inline-block
+									rounded-pill
+									text-white
+								"
+								style="font-size: 11px"
+							>
+								SALE
+							</p>
+							<!-- product image -->
+							<div class="text-center position-relative">
+								<img src="../assets/images/ca_kho_to.png" alt="" />
+
+								<!-- icon add to cart -->
+								<a
+									href="#"
+									class="
+										bg-white
+										rounded-circle
+										shadow
+										d-inline-block
+										p-1
+										position-absolute
+									"
+									style="cursor: pointer; right: 0; bottom: 0"
+								>
+									<img src="../assets/icons/fe_add-cart.svg" alt="" />
+								</a>
+							</div>
+							<!-- infomation -->
+							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
+							<div>
+								<p class="fw-bold mb-2">
+									350.000đ&nbsp;&nbsp;<span
+										class="text-decoration-line-through text-black-50"
+										style="font-size: 13px"
+										>375.000đ</span
+									>
+								</p>
+								<a href="./product_details.html" class="nav-link p-0">
+									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="h-100 w-100 shadow p-3 bg-white rounded product">
+							<!-- sale -->
+							<p
+								class="
+									py-1
+									px-2
+									fw-bold
+									bg-success
+									d-inline-block
+									rounded-pill
+									text-white
+								"
+								style="font-size: 11px"
+							>
+								SALE
+							</p>
+							<!-- product image -->
+							<div class="text-center position-relative">
+								<img src="../assets/images/ca_kho_to.png" alt="" />
+
+								<!-- icon add to cart -->
+								<a
+									href="#"
+									class="
+										bg-white
+										rounded-circle
+										shadow
+										d-inline-block
+										p-1
+										position-absolute
+									"
+									style="cursor: pointer; right: 0; bottom: 0"
+								>
+									<img src="../assets/icons/fe_add-cart.svg" alt="" />
+								</a>
+							</div>
+							<!-- infomation -->
+							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
+							<div>
+								<p class="fw-bold mb-2">
+									350.000đ&nbsp;&nbsp;<span
+										class="text-decoration-line-through text-black-50"
+										style="font-size: 13px"
+										>375.000đ</span
+									>
+								</p>
+								<a href="./product_details.html" class="nav-link p-0">
+									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -1496,8 +2013,8 @@
 		</section>
 		<!-- Start Experiance -->
 		<div class="container pt-5">
-			<div class="row gx-4">
-				<div class="col-md-4 col-sm-12">
+			<div class="row g-3">
+				<div class="col-lg-4 col-sm-12">
 					<div
 						class="px-3 pt-md-5 py-4"
 						style="
@@ -1519,7 +2036,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-md-4 col-sm-12">
+				<div class="col-lg-4 col-sm-12">
 					<div
 						class="px-3 pt-md-5 pb-4"
 						style="
@@ -1541,7 +2058,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-md-4 col-sm-12">
+				<div class="col-lg-4 col-sm-12">
 					<div
 						class="px-3 pt-md-5 pb-4"
 						style="
@@ -1580,7 +2097,7 @@
 				</div>
 
 				<!-- List Product -->
-				<div class="row g-3 pt-4">
+				<div class="row g-3 pt-4 ">
 					<div class="col-md-3">
 						<div class="h-100 w-100 shadow p-3 bg-white rounded product">
 							<!-- sale -->
@@ -1621,17 +2138,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-success m-0">Combo</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -1675,17 +2192,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-danger m-0">Now</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -1729,17 +2246,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-success m-0">Pack</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -1783,89 +2300,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-warning m-0">Store</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Food Deli Now -->
-
-		<!-- Start Food Deli Now -->
-		<section class="mt-4">
-			<div class="container pt-4">
-				<div class="d-flex justify-content-between align-items-center">
-					<h4 class="fw-bold mb-0">Food Deli Now</h4>
-
-					<a href="#" class="nav-link pe-0"
-						>Xem tất cả &nbsp;<img src="../assets/icons/arrow-right-success.svg" alt=""
-					/></a>
-				</div>
-
-				<!-- List Product -->
-				<div class="row g-3 pt-4">
-					<div class="col-md-3">
-						<div class="h-100 w-100 shadow p-3 bg-white rounded product">
-							<!-- sale -->
-							<p
-								class="
-									py-1
-									px-2
-									fw-bold
-									bg-success
-									d-inline-block
-									rounded-pill
-									text-white
-								"
-								style="font-size: 11px"
-							>
-								SALE
-							</p>
-							<!-- product image -->
-							<div class="text-center position-relative">
-								<img src="../assets/images/ca_kho_to.png" alt="" />
-
-								<!-- icon add to cart -->
-								<a
-									href="#"
-									class="
-										bg-white
-										rounded-circle
-										shadow
-										d-inline-block
-										p-1
-										position-absolute
-									"
-									style="cursor: pointer; right: 0; bottom: 0"
-								>
-									<img src="../assets/icons/fe_add-cart.svg" alt="" />
 								</a>
-							</div>
-							<!-- infomation -->
-							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
-							<div>
-								<p class="fw-bold">
-									350.000đ&nbsp;&nbsp;<span
-										class="text-decoration-line-through text-black-50"
-										style="font-size: 13px"
-										>375.000đ</span
-									>
-								</p>
-								<p class="text-secondary">
-									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-success m-0">Combo</p>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -1909,17 +2354,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-danger m-0">Now</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -1963,17 +2408,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-success m-0">Pack</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -2017,17 +2462,71 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="h-100 w-100 shadow p-3 bg-white rounded product">
+							<!-- sale -->
+							<p
+								class="
+									py-1
+									px-2
+									fw-bold
+									bg-success
+									d-inline-block
+									rounded-pill
+									text-white
+								"
+								style="font-size: 11px"
+							>
+								SALE
+							</p>
+							<!-- product image -->
+							<div class="text-center position-relative">
+								<img src="../assets/images/ca_kho_to.png" alt="" />
+
+								<!-- icon add to cart -->
+								<a
+									href="#"
+									class="
+										bg-white
+										rounded-circle
+										shadow
+										d-inline-block
+										p-1
+										position-absolute
+									"
+									style="cursor: pointer; right: 0; bottom: 0"
+								>
+									<img src="../assets/icons/fe_add-cart.svg" alt="" />
+								</a>
+							</div>
+							<!-- infomation -->
+							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
+							<div>
+								<p class="fw-bold mb-2">
+									350.000đ&nbsp;&nbsp;<span
+										class="text-decoration-line-through text-black-50"
+										style="font-size: 13px"
+										>375.000đ</span
+									>
 								</p>
-								<p class="text-warning m-0">Store</p>
+								<a href="./product_details.html" class="nav-link p-0">
+									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -2048,7 +2547,7 @@
 				</div>
 
 				<!-- List Product -->
-				<div class="row g-3 pt-4">
+				<div class="row g-3 pt-4 ">
 					<div class="col-md-3">
 						<div class="h-100 w-100 shadow p-3 bg-white rounded product">
 							<!-- sale -->
@@ -2089,17 +2588,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-success m-0">Combo</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -2143,17 +2642,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-danger m-0">Now</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -2197,17 +2696,17 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
-								</p>
-								<p class="text-success m-0">Pack</p>
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -2251,17 +2750,683 @@
 							<!-- infomation -->
 							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
 							<div>
-								<p class="fw-bold">
+								<p class="fw-bold mb-2">
 									350.000đ&nbsp;&nbsp;<span
 										class="text-decoration-line-through text-black-50"
 										style="font-size: 13px"
 										>375.000đ</span
 									>
 								</p>
-								<p class="text-secondary">
+								<a href="./product_details.html" class="nav-link p-0">
 									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="h-100 w-100 shadow p-3 bg-white rounded product">
+							<!-- sale -->
+							<p
+								class="
+									py-1
+									px-2
+									fw-bold
+									bg-success
+									d-inline-block
+									rounded-pill
+									text-white
+								"
+								style="font-size: 11px"
+							>
+								SALE
+							</p>
+							<!-- product image -->
+							<div class="text-center position-relative">
+								<img src="../assets/images/ca_kho_to.png" alt="" />
+
+								<!-- icon add to cart -->
+								<a
+									href="#"
+									class="
+										bg-white
+										rounded-circle
+										shadow
+										d-inline-block
+										p-1
+										position-absolute
+									"
+									style="cursor: pointer; right: 0; bottom: 0"
+								>
+									<img src="../assets/icons/fe_add-cart.svg" alt="" />
+								</a>
+							</div>
+							<!-- infomation -->
+							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
+							<div>
+								<p class="fw-bold mb-2">
+									350.000đ&nbsp;&nbsp;<span
+										class="text-decoration-line-through text-black-50"
+										style="font-size: 13px"
+										>375.000đ</span
+									>
 								</p>
-								<p class="text-warning m-0">Store</p>
+								<a href="./product_details.html" class="nav-link p-0">
+									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="h-100 w-100 shadow p-3 bg-white rounded product">
+							<!-- sale -->
+							<p
+								class="
+									py-1
+									px-2
+									fw-bold
+									bg-success
+									d-inline-block
+									rounded-pill
+									text-white
+								"
+								style="font-size: 11px"
+							>
+								SALE
+							</p>
+							<!-- product image -->
+							<div class="text-center position-relative">
+								<img src="../assets/images/ca_kho_to.png" alt="" />
+
+								<!-- icon add to cart -->
+								<a
+									href="#"
+									class="
+										bg-white
+										rounded-circle
+										shadow
+										d-inline-block
+										p-1
+										position-absolute
+									"
+									style="cursor: pointer; right: 0; bottom: 0"
+								>
+									<img src="../assets/icons/fe_add-cart.svg" alt="" />
+								</a>
+							</div>
+							<!-- infomation -->
+							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
+							<div>
+								<p class="fw-bold mb-2">
+									350.000đ&nbsp;&nbsp;<span
+										class="text-decoration-line-through text-black-50"
+										style="font-size: 13px"
+										>375.000đ</span
+									>
+								</p>
+								<a href="./product_details.html" class="nav-link p-0">
+									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="h-100 w-100 shadow p-3 bg-white rounded product">
+							<!-- sale -->
+							<p
+								class="
+									py-1
+									px-2
+									fw-bold
+									bg-success
+									d-inline-block
+									rounded-pill
+									text-white
+								"
+								style="font-size: 11px"
+							>
+								SALE
+							</p>
+							<!-- product image -->
+							<div class="text-center position-relative">
+								<img src="../assets/images/ca_kho_to.png" alt="" />
+
+								<!-- icon add to cart -->
+								<a
+									href="#"
+									class="
+										bg-white
+										rounded-circle
+										shadow
+										d-inline-block
+										p-1
+										position-absolute
+									"
+									style="cursor: pointer; right: 0; bottom: 0"
+								>
+									<img src="../assets/icons/fe_add-cart.svg" alt="" />
+								</a>
+							</div>
+							<!-- infomation -->
+							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
+							<div>
+								<p class="fw-bold mb-2">
+									350.000đ&nbsp;&nbsp;<span
+										class="text-decoration-line-through text-black-50"
+										style="font-size: 13px"
+										>375.000đ</span
+									>
+								</p>
+								<a href="./product_details.html" class="nav-link p-0">
+									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="h-100 w-100 shadow p-3 bg-white rounded product">
+							<!-- sale -->
+							<p
+								class="
+									py-1
+									px-2
+									fw-bold
+									bg-success
+									d-inline-block
+									rounded-pill
+									text-white
+								"
+								style="font-size: 11px"
+							>
+								SALE
+							</p>
+							<!-- product image -->
+							<div class="text-center position-relative">
+								<img src="../assets/images/ca_kho_to.png" alt="" />
+
+								<!-- icon add to cart -->
+								<a
+									href="#"
+									class="
+										bg-white
+										rounded-circle
+										shadow
+										d-inline-block
+										p-1
+										position-absolute
+									"
+									style="cursor: pointer; right: 0; bottom: 0"
+								>
+									<img src="../assets/icons/fe_add-cart.svg" alt="" />
+								</a>
+							</div>
+							<!-- infomation -->
+							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
+							<div>
+								<p class="fw-bold mb-2">
+									350.000đ&nbsp;&nbsp;<span
+										class="text-decoration-line-through text-black-50"
+										style="font-size: 13px"
+										>375.000đ</span
+									>
+								</p>
+								<a href="./product_details.html" class="nav-link p-0">
+									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Food Deli Now -->
+
+		<!-- Start Food Deli Now -->
+		<section class="mt-4">
+			<div class="container pt-4">
+				<div class="d-flex justify-content-between align-items-center">
+					<h4 class="fw-bold mb-0">Food Deli Now</h4>
+
+					<a href="#" class="nav-link pe-0"
+						>Xem tất cả &nbsp;<img src="../assets/icons/arrow-right-success.svg" alt=""
+					/></a>
+				</div>
+
+				<!-- List Product -->
+				<div class="row g-3 pt-4 ">
+					<div class="col-md-3">
+						<div class="h-100 w-100 shadow p-3 bg-white rounded product">
+							<!-- sale -->
+							<p
+								class="
+									py-1
+									px-2
+									fw-bold
+									bg-success
+									d-inline-block
+									rounded-pill
+									text-white
+								"
+								style="font-size: 11px"
+							>
+								SALE
+							</p>
+							<!-- product image -->
+							<div class="text-center position-relative">
+								<img src="../assets/images/ca_kho_to.png" alt="" />
+
+								<!-- icon add to cart -->
+								<a
+									href="#"
+									class="
+										bg-white
+										rounded-circle
+										shadow
+										d-inline-block
+										p-1
+										position-absolute
+									"
+									style="cursor: pointer; right: 0; bottom: 0"
+								>
+									<img src="../assets/icons/fe_add-cart.svg" alt="" />
+								</a>
+							</div>
+							<!-- infomation -->
+							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
+							<div>
+								<p class="fw-bold mb-2">
+									350.000đ&nbsp;&nbsp;<span
+										class="text-decoration-line-through text-black-50"
+										style="font-size: 13px"
+										>375.000đ</span
+									>
+								</p>
+								<a href="./product_details.html" class="nav-link p-0">
+									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="h-100 w-100 shadow p-3 bg-white rounded product">
+							<!-- sale -->
+							<p
+								class="
+									py-1
+									px-2
+									fw-bold
+									bg-success
+									d-inline-block
+									rounded-pill
+									text-white
+								"
+								style="font-size: 11px"
+							>
+								SALE
+							</p>
+							<!-- product image -->
+							<div class="text-center position-relative">
+								<img src="../assets/images/ca_kho_to.png" alt="" />
+
+								<!-- icon add to cart -->
+								<a
+									href="#"
+									class="
+										bg-white
+										rounded-circle
+										shadow
+										d-inline-block
+										p-1
+										position-absolute
+									"
+									style="cursor: pointer; right: 0; bottom: 0"
+								>
+									<img src="../assets/icons/fe_add-cart.svg" alt="" />
+								</a>
+							</div>
+							<!-- infomation -->
+							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
+							<div>
+								<p class="fw-bold mb-2">
+									350.000đ&nbsp;&nbsp;<span
+										class="text-decoration-line-through text-black-50"
+										style="font-size: 13px"
+										>375.000đ</span
+									>
+								</p>
+								<a href="./product_details.html" class="nav-link p-0">
+									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="h-100 w-100 shadow p-3 bg-white rounded product">
+							<!-- sale -->
+							<p
+								class="
+									py-1
+									px-2
+									fw-bold
+									bg-success
+									d-inline-block
+									rounded-pill
+									text-white
+								"
+								style="font-size: 11px"
+							>
+								SALE
+							</p>
+							<!-- product image -->
+							<div class="text-center position-relative">
+								<img src="../assets/images/ca_kho_to.png" alt="" />
+
+								<!-- icon add to cart -->
+								<a
+									href="#"
+									class="
+										bg-white
+										rounded-circle
+										shadow
+										d-inline-block
+										p-1
+										position-absolute
+									"
+									style="cursor: pointer; right: 0; bottom: 0"
+								>
+									<img src="../assets/icons/fe_add-cart.svg" alt="" />
+								</a>
+							</div>
+							<!-- infomation -->
+							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
+							<div>
+								<p class="fw-bold mb-2">
+									350.000đ&nbsp;&nbsp;<span
+										class="text-decoration-line-through text-black-50"
+										style="font-size: 13px"
+										>375.000đ</span
+									>
+								</p>
+								<a href="./product_details.html" class="nav-link p-0">
+									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="h-100 w-100 shadow p-3 bg-white rounded product">
+							<!-- sale -->
+							<p
+								class="
+									py-1
+									px-2
+									fw-bold
+									bg-success
+									d-inline-block
+									rounded-pill
+									text-white
+								"
+								style="font-size: 11px"
+							>
+								SALE
+							</p>
+							<!-- product image -->
+							<div class="text-center position-relative">
+								<img src="../assets/images/ca_kho_to.png" alt="" />
+
+								<!-- icon add to cart -->
+								<a
+									href="#"
+									class="
+										bg-white
+										rounded-circle
+										shadow
+										d-inline-block
+										p-1
+										position-absolute
+									"
+									style="cursor: pointer; right: 0; bottom: 0"
+								>
+									<img src="../assets/icons/fe_add-cart.svg" alt="" />
+								</a>
+							</div>
+							<!-- infomation -->
+							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
+							<div>
+								<p class="fw-bold mb-2">
+									350.000đ&nbsp;&nbsp;<span
+										class="text-decoration-line-through text-black-50"
+										style="font-size: 13px"
+										>375.000đ</span
+									>
+								</p>
+								<a href="./product_details.html" class="nav-link p-0">
+									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="h-100 w-100 shadow p-3 bg-white rounded product">
+							<!-- sale -->
+							<p
+								class="
+									py-1
+									px-2
+									fw-bold
+									bg-success
+									d-inline-block
+									rounded-pill
+									text-white
+								"
+								style="font-size: 11px"
+							>
+								SALE
+							</p>
+							<!-- product image -->
+							<div class="text-center position-relative">
+								<img src="../assets/images/ca_kho_to.png" alt="" />
+
+								<!-- icon add to cart -->
+								<a
+									href="#"
+									class="
+										bg-white
+										rounded-circle
+										shadow
+										d-inline-block
+										p-1
+										position-absolute
+									"
+									style="cursor: pointer; right: 0; bottom: 0"
+								>
+									<img src="../assets/icons/fe_add-cart.svg" alt="" />
+								</a>
+							</div>
+							<!-- infomation -->
+							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
+							<div>
+								<p class="fw-bold mb-2">
+									350.000đ&nbsp;&nbsp;<span
+										class="text-decoration-line-through text-black-50"
+										style="font-size: 13px"
+										>375.000đ</span
+									>
+								</p>
+								<a href="./product_details.html" class="nav-link p-0">
+									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="h-100 w-100 shadow p-3 bg-white rounded product">
+							<!-- sale -->
+							<p
+								class="
+									py-1
+									px-2
+									fw-bold
+									bg-success
+									d-inline-block
+									rounded-pill
+									text-white
+								"
+								style="font-size: 11px"
+							>
+								SALE
+							</p>
+							<!-- product image -->
+							<div class="text-center position-relative">
+								<img src="../assets/images/ca_kho_to.png" alt="" />
+
+								<!-- icon add to cart -->
+								<a
+									href="#"
+									class="
+										bg-white
+										rounded-circle
+										shadow
+										d-inline-block
+										p-1
+										position-absolute
+									"
+									style="cursor: pointer; right: 0; bottom: 0"
+								>
+									<img src="../assets/icons/fe_add-cart.svg" alt="" />
+								</a>
+							</div>
+							<!-- infomation -->
+							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
+							<div>
+								<p class="fw-bold mb-2">
+									350.000đ&nbsp;&nbsp;<span
+										class="text-decoration-line-through text-black-50"
+										style="font-size: 13px"
+										>375.000đ</span
+									>
+								</p>
+								<a href="./product_details.html" class="nav-link p-0">
+									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="h-100 w-100 shadow p-3 bg-white rounded product">
+							<!-- sale -->
+							<p
+								class="
+									py-1
+									px-2
+									fw-bold
+									bg-success
+									d-inline-block
+									rounded-pill
+									text-white
+								"
+								style="font-size: 11px"
+							>
+								SALE
+							</p>
+							<!-- product image -->
+							<div class="text-center position-relative">
+								<img src="../assets/images/ca_kho_to.png" alt="" />
+
+								<!-- icon add to cart -->
+								<a
+									href="#"
+									class="
+										bg-white
+										rounded-circle
+										shadow
+										d-inline-block
+										p-1
+										position-absolute
+									"
+									style="cursor: pointer; right: 0; bottom: 0"
+								>
+									<img src="../assets/icons/fe_add-cart.svg" alt="" />
+								</a>
+							</div>
+							<!-- infomation -->
+							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
+							<div>
+								<p class="fw-bold mb-2">
+									350.000đ&nbsp;&nbsp;<span
+										class="text-decoration-line-through text-black-50"
+										style="font-size: 13px"
+										>375.000đ</span
+									>
+								</p>
+								<a href="./product_details.html" class="nav-link p-0">
+									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="h-100 w-100 shadow p-3 bg-white rounded product">
+							<!-- sale -->
+							<p
+								class="
+									py-1
+									px-2
+									fw-bold
+									bg-success
+									d-inline-block
+									rounded-pill
+									text-white
+								"
+								style="font-size: 11px"
+							>
+								SALE
+							</p>
+							<!-- product image -->
+							<div class="text-center position-relative">
+								<img src="../assets/images/ca_kho_to.png" alt="" />
+
+								<!-- icon add to cart -->
+								<a
+									href="#"
+									class="
+										bg-white
+										rounded-circle
+										shadow
+										d-inline-block
+										p-1
+										position-absolute
+									"
+									style="cursor: pointer; right: 0; bottom: 0"
+								>
+									<img src="../assets/icons/fe_add-cart.svg" alt="" />
+								</a>
+							</div>
+							<!-- infomation -->
+							<!-- now: text-danger | combo: success | pack: success | set: success || store: warning  -->
+							<div>
+								<p class="fw-bold mb-2">
+									350.000đ&nbsp;&nbsp;<span
+										class="text-decoration-line-through text-black-50"
+										style="font-size: 13px"
+										>375.000đ</span
+									>
+								</p>
+								<a href="./product_details.html" class="nav-link p-0">
+									Combo đồ ăn sơ chế sẵn 7 ngày trong tuần
+								</a>
+								<p class="text-success mb-0 mt-2">Combo</p>
 							</div>
 						</div>
 					</div>
@@ -2275,7 +3440,7 @@
 			class="mt-5"
 			style="background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(241, 241, 241, 1))"
 		>
-			<div class="container d-flex justify-content-around align-items-center">
+			<div class="container d-flex justify-content-around align-items-center py-3 py-lg-0">
 				<div>
 					<h3 class="fs-1 fw-bold text-success">Đặt hàng online dễ dàng!</h3>
 					<h5 class="fs-4 text-secondary">Tải ngay app Food Deli!</h5>
@@ -2289,7 +3454,7 @@
 						</a>
 					</div>
 				</div>
-				<div>
+				<div class="h-100">
 					<img src="../assets/images/order_online.png" class="w-100 h-100" alt="" />
 				</div>
 			</div>
@@ -2297,14 +3462,16 @@
 		<!-- End Order Online -->
 
 		<!-- Start Footer section -->
-		<section class="pt-2">
-			<div class="container mt-4">
+		<section class="pt-4">
+			<div class="container">
 				<!-- Row 1: Contacts -->
-				<div class="row justify-content-between align-items-center my-3">
-					<div class="col-md-10">
-						<div class="row gx-5 align-items-center">
-							<div class="col-md-3 d-flex align-items-start">
-								<div class="me-2"><img src="../assets/icons/phone.svg" alt="" /></div>
+				<div class="row g-3 justify-content-between align-items-center border-bottom pb-3 mt-3 ">
+					<div class="col-lg-10 col-12 py-2">
+						<div class="row g-3 align-items-center">
+							<div class="col-md-3 col-12 d-flex align-items-start">
+								<div class="me-2">
+									<img src="../assets/icons/phone.svg" alt="" />
+								</div>
 								<div class="">
 									<p class="m-0 text-secondary" style="font-size: 0.75rem">
 										Hotline 24/7
@@ -2313,7 +3480,7 @@
 								</div>
 							</div>
 
-							<div class="col-md-3 d-flex align-items-start">
+							<div class="col-md-3 col-12 d-flex align-items-start">
 								<div class="me-2"><img src="../assets/icons/help.svg" alt="" /></div>
 								<div class="">
 									<p class="m-0 text-secondary" style="font-size: 0.75rem">
@@ -2323,7 +3490,7 @@
 								</div>
 							</div>
 
-							<div class="col-md-3 d-flex align-items-start">
+							<div class="col-md-3 col-12 d-flex align-items-start">
 								<div class="me-2"><img src="../assets/icons/mail.svg" alt="" /></div>
 								<div class="">
 									<p class="m-0 text-secondary" style="font-size: 0.75rem">
@@ -2336,8 +3503,8 @@
 					</div>
 
 					<!-- Payment section -->
-					<div class="col-md-2">
-						<div class="d-flex justify-content-between align-items-center">
+					<div class="col-lg-2 col-12">
+						<div class="d-flex align-items-center">
 							<a
 								href="javascript:void(0)"
 								class="
@@ -2348,10 +3515,15 @@
 									d-flex
 									justify-content-center
 									align-items-center
+									me-3
 								"
 								style="width: 34px; height: 24px"
 							>
-								<img src="../assets/icons/Mastercard.svg" class="d-inline-block" alt="" />
+								<img
+									src="../assets/icons/Mastercard.svg"
+									class="d-inline-block"
+									alt=""
+								/>
 							</a>
 							<a
 								href="javascript:void(0)"
@@ -2363,10 +3535,15 @@
 									d-flex
 									justify-content-center
 									align-items-center
+									me-3
 								"
 								style="width: 34px; height: 24px"
 							>
-								<img src="../assets/icons/PayPal.svg" class="d-inline-block" alt="" />
+								<img
+									src="../assets/icons/PayPal.svg"
+									class="d-inline-block"
+									alt=""
+								/>
 							</a>
 							<a
 								href="javascript:void(0)"
@@ -2378,10 +3555,15 @@
 									d-flex
 									justify-content-center
 									align-items-center
+									me-3
 								"
 								style="width: 34px; height: 24px"
 							>
-								<img src="../assets/icons/Bitcoin.svg" class="d-inline-block" alt="" />
+								<img
+									src="../assets/icons/Bitcoin.svg"
+									class="d-inline-block"
+									alt=""
+								/>
 							</a>
 							<a
 								href="javascript:void(0)"
@@ -2393,34 +3575,39 @@
 									d-flex
 									justify-content-center
 									align-items-center
+									me-3
 								"
 								style="width: 34px; height: 24px"
 							>
-								<img src="../assets/icons/visa-logo.svg" class="d-inline-block" alt="" />
+								<img
+									src="../assets/icons/visa-logo.svg"
+									class="d-inline-block"
+									alt=""
+								/>
 							</a>
 						</div>
 					</div>
 				</div>
 
 				<!-- Row 2: Navigatiors -->
-				<div class="row border-top py-3">
-					<div class="col-md-4">
+				<div class="row g-3 py-3 ">
+					<div class="col-lg-4 col-12">
 						<div>
-							<img src="../assets/images/logo-round.png" alt="" />
+							<img src="../assets/images/logo-round.png" alt="Logo Food Deli" />
 						</div>
 
 						<div class="d-flex align-items-center mt-3">
-							<a href="#" class="btn btn-sm">
-								<img src="../assets/icons/app_store.svg" alt="" />
+							<a href="#" class="btn btn-sm ps-0">
+								<img src="../assets/icons/app_store.svg" alt="AppStore" />
 							</a>
 							<a href="#" class="btn btn-sm">
-								<img src="../assets/icons/google_play.svg" alt="" />
+								<img src="../assets/icons/google_play.svg" alt="GooglePlay" />
 							</a>
 						</div>
 					</div>
-					<div class="col-md-8">
-						<div class="row gx-2">
-							<div class="col-md-3">
+					<div class="col-lg-8 col-12">
+						<div class="row g-3">
+							<div class="col-md-3 col-12">
 								<p class="fw-bold fs-6 mb-1">Về chúng tôi</p>
 								<ul class="nav flex-column">
 									<li class="nav-item">
@@ -2474,7 +3661,7 @@
 								</ul>
 							</div>
 
-							<div class="col-md-3">
+							<div class="col-md-3 col-12">
 								<p class="fw-bold fs-6 mb-1">Hướng dẫn</p>
 								<ul class="nav flex-column">
 									<li class="nav-item">
@@ -2564,7 +3751,7 @@
 								</ul>
 							</div>
 
-							<div class="col-md-3">
+							<div class="col-md-3 col-12">
 								<p class="fw-bold fs-6 mb-1">Menu</p>
 								<ul class="nav flex-column">
 									<li class="nav-item">
@@ -2630,7 +3817,7 @@
 								</ul>
 							</div>
 
-							<div class="col-md-3">
+							<div class="col-md-3 col-12">
 								<p class="fw-bold fs-6 mb-1">Sản phẩm</p>
 								<ul class="nav flex-column">
 									<li class="nav-item">
@@ -2700,13 +3887,11 @@
 				</div>
 
 				<!-- Row 3: Company info -->
-				<div class="row border-top py-3">
-					<p class="m-0" style="font-size: 0.75rem">
-						© 2021 Công ty TNHH Tập đoàn Cổng Mặt Trời / Địa chỉ: Tầng 2, NV 5.10 KĐT
-						Viglacera, Hữu Hưng, Đại Mỗ, Hà Nội / Mã số thuế: 0109517477 / Điện thoại:
-						0976 212 555
-					</p>
-				</div>
+				<p class="mb-0  border-top py-3" style="font-size: 0.75rem">
+					© 2021 Công ty TNHH Tập đoàn Cổng Mặt Trời / Địa chỉ: Tầng 2, NV 5.10 KĐT
+					Viglacera, Hữu Hưng, Đại Mỗ, Hà Nội / Mã số thuế: 0109517477 / Điện thoại: 0976
+					212 555
+				</p>
 			</div>
 		</section>
 		<!-- End Footer section -->

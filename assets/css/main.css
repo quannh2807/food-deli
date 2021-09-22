@@ -38,8 +38,8 @@ dropdown-toggle::after {
 /* Banner */
 .banner-section {
 	background-size: cover;
-	padding-top: 5rem;
-	padding-bottom: 5rem;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
 }
 .banner-card {
 	max-width: 400px;
@@ -76,6 +76,7 @@ dropdown-toggle::after {
 	padding: 8px 16px;
 	color: #646d84;
 	cursor: pointer;
+	white-space: nowrap;
 }
 .pro_category:hover {
 	background: #cdeedf;
@@ -140,4 +141,98 @@ dropdown-toggle::after {
 		top: 50%;
 		right: 0;
 	}
+}
+
+.col-1over5,
+.col-sm-1over5,
+.col-md-1over5,
+.col-lg-1over5,
+.col-xl-1over5 {
+    position: relative;
+    min-height: 1px;
+}
+.col-1over5 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+@media (min-width: 540px) {
+    .col-sm-1over5 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+@media (min-width: 720px) {
+    .col-md-1over5 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+@media (min-width: 960px) {
+    .col-lg-1over5 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+@media (min-width: 1140px) {
+    .col-xl-1over5 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+.col-1over10,
+.col-sm-1over10,
+.col-md-1over10,
+.col-lg-1over10,
+.col-xl-1over10 {
+    position: relative;
+    min-height: 1px;
+}
+.col-1over10 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 10%;
+    flex: 0 0 10%;
+    max-width: 10%;
+}
+@media (min-width: 540px) {
+    .col-sm-1over10 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 10%;
+        flex: 0 0 10%;
+        max-width: 10%;
+    }
+}
+@media (min-width: 720px) {
+    .col-md-1over10 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 10%;
+        flex: 0 0 10%;
+        max-width: 10%;
+    }
+}
+@media (min-width: 960px) {
+    .col-lg-1over10 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 10%;
+        flex: 0 0 10%;
+        max-width: 10%;
+    }
+}
+@media (min-width: 1140px) {
+    .col-xl-1over10 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 10%;
+        flex: 0 0 10%;
+        max-width: 10%;
+    }
 }
