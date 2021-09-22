@@ -19,19 +19,17 @@
 	</head>
 
 	<body>
-		<!-- Start Navbar -->
-		<nav class="border-top border-success border-4">
-			<div class="container px-0" style="border-bottom-color: #ecedf1">
-				<div class="d-flex align-items-center justify-content-between">
-					<div class="d-flex align-items-center">
-						<a href="#" class="nav-link p-0"
-							><img src="./assets/icons/back.svg" alt="" /> &nbsp;<span
-								>Quay lại trang chủ food.com.vn</span
-							>
-						</a>
-					</div>
+		<!-- Start Header -->
+		<header class="border-top border-success border-4">
+			<!-- Top bar -->
+			<div class="container border-bottom">
+				<nav class="navbar justify-content-between align-items-center">
+					<a href="#" class="nav-link p-0 col-lg-6 col-12">
+						<img src="./assets/icons/back.svg" alt="" />
+						&nbsp;<span>Quay lại trang chủ food.com.vn</span>
+					</a>
 
-					<ul class="navbar-nav flex-row">
+					<ul class="navbar-nav flex-row justify-content-start justify-content-lg-end col-lg-6 col-12 d-md-flex d-none">
 						<li class="nav-item me-3">
 							<a class="nav-link d-flex align-items-center" href="#">
 								<img src="./assets/icons/doc.svg" alt="" />&nbsp;&nbsp;Giới thiệu
@@ -50,129 +48,184 @@
 							>
 						</li>
 					</ul>
-				</div>
+				</nav>
 			</div>
-			<div class="container px-0 border-top border-1">
-				<div class="row py-3">
-					<!-- Brand image -->
+			<!-- Top bar -->
+
+			<!-- Start Navbar -->
+			<nav class="navbar navbar-expand-lg py-3">
+				<div class="container">
 					<div class="col-1">
-						<a class="navbar-brand" href="#">
+						<a class="navbar-brand" href="./index.html">
 							<img src="./assets/images/food-deli-logo.png" alt="Food deli logo" />
 						</a>
 					</div>
+					<button
+						class="btn btn-sm navbar-toggler"
+						id="menu"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
 
-					<!-- Form search -->
-					<form class="col-8 my-auto">
-						<div class="d-flex justify-content-center align-items-center">
-							<div class="btn-group me-2">
-								<button
-									type="button"
-									class="btn btn-sm btn-success rounded-pill dropdown-toggle px-3 py-2"
-									data-bs-toggle="dropdown"
-									aria-expanded="false"
-								>
-									<img src="./assets/icons/bag2.svg" alt="" />&nbsp; Sản phẩm
-								</button>
-								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="#">Sản phẩm 2</a></li>
-									<li><a class="dropdown-item" href="#">Sản phẩm 3</a></li>
-									<li><a class="dropdown-item" href="#">Sản phẩm 4</a></li>
-								</ul>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<div class="row flex-lg-grow-1 mt-3 mt-lg-0">
+							<!-- Form search -->
+							<div class="col-lg-9 col-12 justify-content-end">
+								<form class="offset-lg-1 col-lg-9">
+									<div class="d-flex justify-content-center align-items-center">
+										<div class="dropdown me-3">
+											<button
+												type="button"
+												class="
+													btn btn-sm btn-success
+													rounded-pill
+													dropdown-toggle
+													px-3
+													py-2
+												"
+												data-bs-toggle="dropdown"
+												aria-expanded="false"
+												style="font-weight: 600;"
+											>
+												<img src="./assets/icons/bag2.svg" alt="" />&nbsp;
+												Sản phẩm
+											</button>
+											<ul class="dropdown-menu">
+												<li>
+													<a class="dropdown-item" href="#">Sản phẩm 2</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="#">Sản phẩm 3</a>
+												</li>
+												<li>
+													<a class="dropdown-item" href="#">Sản phẩm 4</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="flex-grow-1" style="position: relative">
+											<input
+												class="form-control rounded-pill py-2 px-3 input-search"
+												type="search"
+												placeholder="Tìm kiếm sản phẩm"
+												aria-label="Search"
+											/>
+											<button
+												class="btn btn-sm"
+												type="submit"
+												style="
+													position: absolute;
+													top: 50%;
+													right: 5px;
+													margin-top: -1rem;
+												"
+											>
+												<img src="./assets/icons/search.svg" alt="" />
+											</button>
+										</div>
+									</div>
+								</form>
 							</div>
 
-							<div class="col-8" style="position: relative">
-								<input
-									class="form-control rounded-pill py-2 px-3"
-									type="search"
-									placeholder="Tìm kiếm sản phẩm"
-									aria-label="Search"
-									style="background-color: rgba(236, 237, 241, 1)"
-								/>
-								<button
-									class="btn btn-sm"
-									type="submit"
-									style="
-										position: absolute;
-										top: 50%;
-										right: 5px;
-										margin-top: -1rem;
-									"
-								>
-									<img src="./assets/icons/search.svg" alt="" />
-								</button>
-							</div>
-						</div>
-					</form>
-
-					<!-- Cart section -->
-					<ul class="col-3 navbar-nav flex-row justify-content-end align-items-center">
-						<li class="nav-item me-4">
-							<a
-								class="btn btn-sm border rounded-5 py-2 position-relative"
-								style="border-radius: 8px;"
-								aria-current="page"
-								href="#"
-							>
-								<img src="./assets/icons/heart.svg" alt="" />
-								<span
-									class="
-										position-absolute
-										top-0
-										start-100
-										translate-middle
-										badge
-										rounded-pill
-										bg-danger
-									"
-									style="font-size: 11px"
-								>
-									99
-								</span>
-							</a>
-						</li>
-						<li class="nav-item me-4">
-							<a
-								class="btn btn-sm border rounded-5 py-2 position-relative"
-								style="border-radius: 8px;"
-								aria-current="page"
-								href="#"
-							>
-								<img src="./assets/icons/cart.svg" alt="" />
-								<span
-									class="
-										position-absolute
-										top-0
-										start-100
-										translate-middle
-										badge
-										rounded-pill
-										bg-danger
-									"
-									style="font-size: 11px"
-								>
-									99
-								</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a
+							<!-- Cart section -->
+							<ul
 								class="
-									btn btn-sm
-									border border-success
-									rounded-pill
-									px-3
-									py-2
-									text-success
+									col-lg-3 col-12
+									navbar-nav
+									flex-row
+									justify-content-end
+									align-items-center
+									mt-3 mt-lg-0
 								"
-								href="#"
-								>Đăng nhập</a
 							>
-						</li>
-					</ul>
+								<li class="nav-item me-4">
+									<a
+										class="btn btn-sm border rounded-5 py-2 position-relative"
+										style="border-radius: 8px"
+										aria-current="page"
+										href="#"
+									>
+										<img
+											src="./assets/icons/heart.svg"
+											style="min-width: 1rem"
+											alt=""
+										/>
+										<!-- <span class="d-lg-none" style="font-weight: 600;font-size: 14px;">
+											Sản phẩm yêu thích
+										</span> -->
+										<span
+											class="
+												position-absolute
+												top-0
+												start-100
+												translate-middle
+												badge
+												rounded-pill
+												bg-danger
+											"
+											style="font-size: 11px"
+										>
+											99
+										</span>
+									</a>
+								</li>
+								<li class="nav-item me-1">
+									<a
+										class="btn btn-sm border rounded-5 py-2 position-relative"
+										style="border-radius: 8px"
+										aria-current="page"
+										href="#"
+									>
+										<img
+											src="./assets/icons/cart.svg"
+											style="min-width: 1rem"
+											alt=""
+										/>
+										<span
+											class="
+												position-absolute
+												top-0
+												start-100
+												translate-middle
+												badge
+												rounded-pill
+												bg-danger
+											"
+											style="font-size: 11px"
+										>
+											99
+										</span>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a
+										class="
+											btn btn-sm
+											border border-success
+											rounded-pill
+											px-3
+											py-2
+											text-success
+										"
+										href="#"
+										style="white-space: nowrap"
+										>Đăng nhập</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
-			</div>
-		</nav>
-		<!-- End Navbar -->
+			</nav>
+			<!-- End Navbar -->
+		</header>
+		<!-- End Header -->
 
 		<!-- Start Banner -->
 		<section class="banner-section" style="margin-bottom: 4rem">
@@ -1847,6 +1900,6 @@
 			integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
 			crossorigin="anonymous"
 		></script>
-		<script src="./js/main.js"></script>
+		<script src="./assets/js/main.js"></script>
 	</body>
 </html>

@@ -12,12 +12,23 @@ img {
 dropdown-toggle::after {
 	background-image: url('../icons/down.svg');
 }
+.navbar-toggler:focus {
+	color: #fff;
+}
 .navbar-toggler-icon {
 	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .nav-link {
 	color: rgb(8, 8, 8);
+}
+
+.input-search {
+	background-color: rgba(236, 237, 241, 1);
+}
+.input-search::placeholder {
+	font-size: 14px;
+	font-weight: 600;
 }
 
 .banner-section {
@@ -110,3 +121,10 @@ dropdown-toggle::after {
 	background-color: #05A85E;
 }
 /* End Carousel */
+
+
+@media (max-width:300px) {
+	.input-search::placeholder {
+		color: transparent;
+	}
+}
