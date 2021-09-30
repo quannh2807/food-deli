@@ -17,30 +17,60 @@ document.querySelector('button.btn-expand').addEventListener('click', (event) =>
 	drawer.open();
 }); */
 
+function removeAttr(selector, attrName) {
+	let elements = document.querySelectorAll(selector);
+	elements.forEach((element) => {
+		let currentAttr = element.getAttribute(attrName);
+		if (currentAttr.length > 0) {
+			element.setAttribute(attrName, '');
+		}
+	});
+}
+function addAttr(selector, attrName, value) {
+	let elements = document.querySelectorAll(selector);
+	elements.forEach((element) => {
+		let currentAttr = element.getAttribute(attrName);
+		if (currentAttr.length <= 0) {
+			element.setAttribute(attrName, value);
+		}
+	});
+}
+function removeClassName(selector, className) {
+	let listSelector = document.querySelectorAll(selector);
+	listSelector.forEach((element) => {
+		let isContain = element.classList.contains(className);
+		if (isContain) {
+			element.classList.remove(className);
+		}
+	});
+}
+function addClassName(selector, className) {
+	let listSelector = document.querySelectorAll(selector);
+	listSelector.forEach((element) => {
+		let isContain = element.classList.contains(className);
+		if (!isContain) {
+			element.classList.add(className);
+		}
+	});
+}
 window.onresize = function () {
 	let windowWidth = window.innerWidth;
-	document.querySelectorAll('.btn-collapse').forEach((element) => {
-		let attr = element.getAttribute('data-bs-toggle');
-		if (windowWidth > 768 && attr.length > 0) {
-			element.setAttribute('data-bs-toggle', '');
-			let listActiveE = document.querySelectorAll('.accordion-collapse');
-			listActiveE.forEach((e) => e.classList.add('show'));
-		} else if (windowWidth < 768 && !attr.length > 0) {
-			element.setAttribute('data-bs-toggle', 'collapse');
 
-			let listActiveE = document.querySelectorAll('.accordion-collapse');
-			listActiveE.forEach((e) => e.classList.remove('show'));
-		}
-	});
+	if (windowWidth >= 768) {
+		addClassName('.accordion-collapse', 'show');
+		removeAttr('.btn-collapse', 'data-bs-toggle')
+	} else if (windowWidth < 768) {
+		removeClassName('.accordion-collapse', 'show');
+		addAttr('.btn-collapse', 'data-bs-toggle', 'collapse')
+	}
 };
 window.onload = function () {
-	let listActiveE = document.querySelectorAll('.accordion-collapse');
-	listActiveE.forEach((e) => {
-		let isContain = e.classList.contains('show');
-		if (!isContain && window.innerWidth > 767) {
-			e.classList.add('show');
-		} else if (isContain && window.innerWidth < 768) {
-			e.classList.remove('show');
-		}
-	});
+	let windowWidth = window.innerWidth;
+	if (windowWidth >= 768) {
+		addClassName('.accordion-collapse', 'show');
+		removeAttr('.btn-collapse', 'data-bs-toggle')
+	} else if (windowWidth < 768) {
+		removeClassName('.accordion-collapse', 'show');
+		addAttr('.btn-collapse', 'data-bs-toggle')
+	}
 };
